@@ -1,11 +1,11 @@
 {
     "key": "group_5e22639cebe2e",
-    "title": "Modules - Row",
+    "title": "Modules - Rows",
     "fields": [
         {
             "key": "field_5e22639cede4d",
-            "label": "Row",
-            "name": "row",
+            "label": "Rows",
+            "name": "rows",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -78,5 +78,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579358650
+    "modified": 1579366781
 }

@@ -4,10 +4,10 @@
     "fields": [
         {
             "key": "field_5e18c2d83bdd4",
-            "label": "Columns",
-            "name": "columns",
+            "label": "Row",
+            "name": "row_regular",
             "type": "repeater",
-            "instructions": "Columns für Inhalte.",
+            "instructions": "Row (holds columns).",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -36,61 +36,6 @@
                     },
                     "placement": "top",
                     "endpoint": 0
-                },
-                {
-                    "key": "field_5e1a2fa92d679",
-                    "label": "Textfarbe",
-                    "name": "col_color",
-                    "type": "color_picker",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": ""
-                },
-                {
-                    "key": "field_5e1a2b5bcee42",
-                    "label": "Hintergrundfarbe",
-                    "name": "col_bgcolor",
-                    "type": "color_picker",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": ""
-                },
-                {
-                    "key": "field_5e1a0ccf2294a",
-                    "label": "Text Ausrichtung",
-                    "name": "col_text_align",
-                    "type": "radio",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "33",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "left": "Links",
-                        "center": "Zentriert",
-                        "right": "Rechts"
-                    },
-                    "allow_null": 0,
-                    "other_choice": 0,
-                    "default_value": "",
-                    "layout": "horizontal",
-                    "return_format": "value",
-                    "save_other_choice": 0
                 },
                 {
                     "key": "field_5e18c5073aa3f",
@@ -504,6 +449,27 @@
                     "endpoint": 0
                 },
                 {
+                    "key": "field_5e232284182bb",
+                    "label": "Options Text and colors",
+                    "name": "o_tc",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_5e2321b5c4878"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                },
+                {
                     "key": "field_5e18c37e3bdd6",
                     "label": "Breite der Column",
                     "name": "groesse",
@@ -544,5 +510,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579358652
+    "modified": 1579365266
 }

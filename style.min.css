@@ -278,7 +278,6 @@ div#ui-datepicker-div{z-index:1000 !important}
 @media(min-width:576px){.wrapper_fw .col_inner .col_inner_bgcolor{padding:60px}
 }@media(min-width:768px){#main-nav li.m_footer{clip:rect(1px,1px,1px,1px);position:fixed}
 .slider_content{height:440px}
-.slider_content figure{border-left:10px solid #fff;border-right:10px solid #fff}
 .flex_features .loader_wrapper{height:auto}
 .flex_features .loader_wrapper figure{min-height:180px}
 .flex_features .feature_text{padding-left:15px;padding-right:15px}

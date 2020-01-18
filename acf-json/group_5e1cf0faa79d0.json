@@ -1,11 +1,11 @@
 {
     "key": "group_5e1cf0faa79d0",
-    "title": "Modules - Row Fullwidth",
+    "title": "Modules - Rows Fullwidth",
     "fields": [
         {
             "key": "field_5e0a6b17954b6",
-            "label": "Row Fullwidth",
-            "name": "row_fw",
+            "label": "Rows Fullwidth",
+            "name": "rows_fw",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -78,5 +78,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579358654
+    "modified": 1579366830
 }

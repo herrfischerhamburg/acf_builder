@@ -1,7 +1,5 @@
 "use strict";
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 /**
  * Custom JS.
  *
@@ -62,26 +60,15 @@ $(document).ready(function () {
     $(this).css('visibility', 'visible');
   });
   $('.slider_content').slick({
-    centerMode: true,
-    centerPadding: '150px',
+    infinite: true,
     slidesToShow: 1,
-    responsive: [{
-      breakpoint: 767.98,
-      settings: _defineProperty({
-        arrows: true,
-        centerMode: true,
-        centerPadding: '50px',
-        slidesToShow: 1
-      }, "centerMode", false)
-    }, {
-      breakpoint: 575.98,
-      settings: _defineProperty({
-        arrows: false,
-        centerMode: true,
-        centerPadding: '15px',
-        slidesToShow: 1
-      }, "centerMode", false)
-    }]
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4500,
+    dots: false,
+    arrows: false,
+    fade: true,
+    pauseOnHover: false
   });
 });
 /**

@@ -124,6 +124,26 @@ elseif( get_row_layout() == 'buttons' ): ?>
     </div>
 
 
+<?php // Slider
+elseif( get_row_layout() == 'slider' ): ?>
+    <div class="flex_inner <?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?>">
+    <?php if ( have_rows('images') ) : ?>
+        <div class="slider_content">
+            <?php while( have_rows('images') ) : the_row(); ?>
+            <?php
+                $image = get_sub_field( 'image' );
+                $size = 'img-l';
+                $img = wp_get_attachment_image_src( $image, $size );
+            ?>
+            <div class="loader_wrapper">
+            <figure style="background-image: url('<?php echo $img[0] ?>')"></figure>  
+            </div>
+            <?php endwhile; ?>
+        </div>
+    <?php endif; ?>
+    </div>
+
+
 <?php // Zitat
 elseif( get_row_layout() == 'zitat' ): ?>
     <div class="flex_inner <?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?>">

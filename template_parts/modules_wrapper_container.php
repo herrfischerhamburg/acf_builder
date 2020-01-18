@@ -47,15 +47,15 @@
         <div class="container">
 
         
-        <?php if ( have_rows( 'row' ) ) : ?>
-            <?php while ( have_rows( 'row' ) ) : the_row(); ?>
+        <?php if ( have_rows( 'rows' ) ) : ?>
+            <?php while ( have_rows( 'rows' ) ) : the_row(); ?>
             <?php $gr_row = get_row_index(); ?>
 
-                <?php if ( have_rows( 'columns' ) ) : ?>
+                <?php if ( have_rows( 'row_regular' ) ) : ?>
                     
                     <div class="row">
 
-                    <?php while ( have_rows( 'columns' ) ) : the_row(); ?>
+                    <?php while ( have_rows( 'row_regular' ) ) : the_row(); ?>
                     <?php $gr_col = get_row_index(); ?>
 
                         <?php $desktop = get_sub_field('desktop'); ?>
@@ -112,6 +112,7 @@
                 <?php else : ?>
                     <?php // no rows found ?>
                 <?php endif; ?>
+                </div> <!-- / row -->
             <?php endwhile; ?>
         <?php else : ?>
             <?php // no rows found ?>
@@ -136,15 +137,15 @@
         <div class="container-fluid">
 
         
-        <?php if ( have_rows( 'row_fw' ) ) : ?>
-            <?php while ( have_rows( 'row_fw' ) ) : the_row(); ?>
+        <?php if ( have_rows( 'rows_fw' ) ) : ?>
+            <?php while ( have_rows( 'rows_fw' ) ) : the_row(); ?>
             <?php $gr_row = get_row_index(); ?>
 
-                <?php if ( have_rows( 'columns' ) ) : ?>
+                <?php if ( have_rows( 'row' ) ) : ?>
                     
                     <div class="row">
 
-                    <?php while ( have_rows( 'columns' ) ) : the_row(); ?>
+                    <?php while ( have_rows( 'row' ) ) : the_row(); ?>
                     <?php $gr_col = get_row_index(); ?>
 
                         <?php $desktop = get_sub_field('desktop'); ?>
@@ -214,6 +215,7 @@
 
                             </div>
                             </div>  
+                            
 
                         <?php else: ?>
                             <?php // no layouts found ?>
@@ -222,6 +224,7 @@
                 <?php else : ?>
                     <?php // no rows found ?>
                 <?php endif; ?>
+                </div> <!-- / row -->
             <?php endwhile; ?>
         <?php else : ?>
             <?php // no rows found ?>

@@ -1,6 +1,6 @@
 {
     "key": "group_5e0a954b030dd",
-    "title": "Modules - Columns - Options (Endgeräte)",
+    "title": "Modules - Columns - Options (Devices)",
     "fields": [
         {
             "key": "field_5e22531701d50",
@@ -371,5 +371,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579358644
+    "modified": 1579360591
 }

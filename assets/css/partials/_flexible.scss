@@ -14,13 +14,6 @@
         background-position: center;
     }
 
-    figure {
-        @include media-breakpoint-up(md) {
-            border-left: 10px solid $w;
-            border-right: 10px solid $w;
-        }
-    }
-
     .slick-arrow {
         width: 60px;
         height: 60px;
