@@ -1,0 +1,87 @@
+/**
+ * Clearfix
+ */
+@mixin clearfix {
+	&:before,
+	&:after {
+        content: " ";
+        display: table;
+    }
+
+	&:after {
+        clear: both;
+    }
+}
+
+/**
+ * Centering
+ */
+// Vertically centers the element inside of its first non-static parent,
+@mixin vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}  
+// Horizontally centers the element inside of its first non-static parent,
+@mixin horizontal-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+// Absolutely centers the element inside of its first non-static parent,
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/**
+ * Shadows
+ */
+@mixin shadow_a {
+    box-shadow: 0 .2em .5em rgba($color: $b, $alpha: .3);
+}
+
+/**
+ * Icons
+ */
+@mixin icon {
+    font-family:"Genericons-Neue";	
+    display:inline-block;
+    vertical-align:middle;
+    line-height:1;
+    font-weight:normal;
+    font-style:normal;
+    speak:none;
+    text-decoration:inherit;
+    text-transform:none;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/**
+ * Spaces
+ */
+// @mixin spacesasusual {
+//     p,
+//     ul,
+//     ol {
+//         margin-bottom: 1.15rem;
+
+//         &:last-child {
+//             margin-bottom: 0;
+//         }
+//     }
+
+//     h1, h2, h3, h4, h5 {
+//         margin: 2.75rem 0 1.05rem;
+//     }
+
+//     > * {
+//         &:last-child {
+//             margin-bottom: 0;
+//         }
+//     }
+// }

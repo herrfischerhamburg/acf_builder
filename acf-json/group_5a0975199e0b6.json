@@ -1,0 +1,185 @@
+{
+    "key": "group_5a0975199e0b6",
+    "title": "SZs",
+    "fields": [
+        {
+            "key": "field_5a0c6a704c438",
+            "label": "Verband",
+            "name": "sz_verband",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "AWO Bezirksverband Oberbayern": "AWO Bezirksverband Oberbayern",
+                "AWO Bezirksverband Schwaben e.V.": "AWO Bezirksverband Schwaben e.V.",
+                "AWO Bezirksverband Unterfranken": "AWO Bezirksverband Unterfranken",
+                "AWO Hans-Weinberger-Akademie": "AWO Hans-Weinberger-Akademie",
+                "AWO Kreisverband Augsburg": "AWO Kreisverband Augsburg",
+                "AWO Gesellschaft für Altenhilfeeinrichtungen": "AWO Gesellschaft für Altenhilfeeinrichtungen",
+                "AWO Kreisverband München-Stadt": "AWO Kreisverband München-Stadt",
+                "AWO Leverkusen": "AWO Leverkusen",
+                "AWO Ober- und Mittelfranken": "AWO Ober- und Mittelfranken",
+                "AWO Hessen-Süd": "AWO Hessen-Süd",
+                "AWO Landesverband Saarland e.V.": "AWO Landesverband Saarland e.V.",
+                "AWO Hamburg": "AWO Hamburg",
+                "AWO Kreisverband Frankfurt am Main e.V.": "AWO Kreisverband Frankfurt am Main e.V.",
+                "AWO Kreisverband Wiesbaden e.V.": "AWO Kreisverband Wiesbaden e.V.",
+                "AWO Nordhessen": "AWO Nordhessen",
+                "AWO Müritz": "AWO Müritz",
+                "AWO Mittelfranken-Süd": "AWO Mittelfranken-Süd"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5a0976f26e921",
+            "label": "Straße",
+            "name": "sz_strase",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "14.2857142857143",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a0977076e922",
+            "label": "PLZ",
+            "name": "sz_plz",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "5.2857142857143",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a0977156e923",
+            "label": "Ort",
+            "name": "sz_ort",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "14.2857142857143",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a0977256e924",
+            "label": "E-Mail",
+            "name": "sz_email",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "15.2857142857143",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a0977356e925",
+            "label": "Website",
+            "name": "sz_website",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "15.2857142857143",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a0977486e926",
+            "label": "Bild",
+            "name": "sz_bild",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "10.2857142857143",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "szs"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1579108383
+}

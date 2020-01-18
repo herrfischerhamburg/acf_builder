@@ -1,0 +1,26 @@
+.main_footer {
+    padding-top: $m;
+    padding-bottom: $m;
+    font-size: 90%;
+
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+    }
+
+    .container {
+        .row {
+            > div {
+                .menu {
+                    li {
+                        list-style: none;
+                        margin-left: 0;
+                    }
+
+                    @include media-breakpoint-up(md) {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

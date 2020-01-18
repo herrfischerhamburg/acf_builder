@@ -1,0 +1,36 @@
+/**!
+Theme Name: ACF Builder
+Description: Custom WordPress Theme
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pk
+*/
+
+#__bs_notify__ {
+	display: none !important;
+}
+
+@import "././node_modules/bootstrap/scss/functions";
+@import "././node_modules/bootstrap/scss/variables";
+@import "././node_modules/bootstrap/scss/mixins/_breakpoints";
+
+@import "partials/mixins";
+@import "partials/variables";
+
+@import "vendor/vendor";
+@import "vendor/normalize";
+
+@import "partials/typo";
+@import "partials/img";
+@import "partials/navigation";
+@import "partials/base";
+@import "partials/template";
+@import "partials/flexible";
+@import "partials/pages";
+@import "partials/singles";
+@import "partials/wrapper";
+@import "partials/footer";
+@import "partials/header";
+@import "partials/forms";
+@import "partials/hacks";

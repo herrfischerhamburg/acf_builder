@@ -1,0 +1,9 @@
+// IE 11 Scrollbar
+@viewport{ 
+    width: auto !important; 
+}
+
+// Safari datepicker fallback
+div#ui-datepicker-div {
+    z-index: 1000!important;
+}

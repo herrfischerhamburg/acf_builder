@@ -1,0 +1,263 @@
+/**
+ * Wrap checkboxes and radio buttons with lable ("use_label_element"):
+ * <p> Radio examples
+      [radio radio-129 use_label_element default:1 "11" "22" "33"]
+   </p>
+   <p> Checkbox examples
+      [checkbox checkbox-758 use_label_element "aa" "bb" "cc"]
+   </p>
+ */
+ .wpcf7-form {
+    text-align: left;
+    font-size: 95%;
+
+    input:not([type="checkbox"]),
+    input:not([type="radio"]),
+    label,
+    textarea,
+    select {
+        width: 100%;
+        border: 0;
+        margin: 0;
+    }
+
+    input:not([type="checkbox"]),
+    input:not([type="radio"]),
+    textarea,
+    select {
+        font-size: 95%;
+    }
+
+    input:not([type="checkbox"]),
+    input:not([type="radio"]),
+    select,
+    textarea {
+        background-color: $input_bg;
+        padding: .5em .8em;
+    }
+
+    input[type="submit"] {
+        background-color: $c1;
+        color: $w;
+        padding: $xs;
+    }
+
+    span.wpcf7-not-valid-tip {
+        color: red;
+        font-size: .9em;
+        display: block;
+    }
+
+    div.wpcf7-response-output {
+        margin: $sm 0 0 0;
+        padding: $xs $s;
+        border: 2px solid $c1;
+    }
+
+    span.wpcf7-list-item {
+        margin: 0;
+    }
+
+    label {
+        > .wpcf7-form-control-wrap {
+            display: block;
+            margin-top: .3em;
+            // border: 1px solid red;
+        }
+    }
+}
+
+.wpcf7 .submit_wrapper {
+	position: relative;
+
+	.ajax-loader {
+		// display: block !important;
+		// visibility: visible !important;
+
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		margin: 0;
+		z-index: 1;
+
+        // loading icon
+        // Change color at "%23fff"
+		background-color: tomato;
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20version%3D%221.1%22%20id%3D%22loader-1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%20%20%20%20%20width%3D%2240px%22%20height%3D%2240px%22%20viewBox%3D%220%200%2050%2050%22%20style%3D%22enable-background%3Anew%200%200%2050%2050%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%20%20%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M43.935%2C25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318%2C0-18.683%2C8.365-18.683%2C18.683h4.068c0-8.071%2C6.543-14.615%2C14.615-14.615c8.072%2C0%2C14.615%2C6.543%2C14.615%2C14.615H43.935z%22%3E%0A%20%20%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0A%20%20%20%20%20%20attributeName%3D%22transform%22%0A%20%20%20%20%20%20type%3D%22rotate%22%0A%20%20%20%20%20%20from%3D%220%2025%2025%22%0A%20%20%20%20%20%20to%3D%22360%2025%2025%22%0A%20%20%20%20%20%20dur%3D%220.6s%22%0A%20%20%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0A%20%20%20%20%3C%2Fpath%3E%0A%20%20%3C%2Fsvg%3E");
+		background-repeat: no-repeat;
+		background-size: 40px;
+		background-position: center;
+	}
+
+	.wpcf7-submit {
+		margin: 0;
+		height: auto;
+        padding: 14px;
+	}
+}
+
+// Select
+select,
+.wpcf7-date {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-size: .5em;
+    background-position: calc(100% - 1em) center;
+    background-repeat: no-repeat;
+}
+
+// Files Reset
+.files-wrapper-files {
+    .file {
+        position: relative;
+        
+        + .file {
+            margin-top: $xs;
+        }
+
+        input {
+            font-size: 1.5rem;
+            padding: $sm;
+            padding-right: $l;
+        }
+    }
+}
+.files-wrapper-files .resetlink {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Ctitle%3Ef-remove%3C%2Ftitle%3E%3Cg%20fill%3D%22%23e2001a%22%3E%3Cpath%20d%3D%22M16%2C0A16%2C16%2C0%2C1%2C0%2C32%2C16%2C16.047%2C16.047%2C0%2C0%2C0%2C16%2C0Zm8.121%2C22L22%2C24.121l-6-6-6%2C6L7.879%2C22l6-6-6-6L10%2C7.879l6%2C6%2C6-6L24.121%2C10l-6%2C6Z%22%20fill%3D%22%23e2001a%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+	background-size: 22px;
+	background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+	text-indent: -400px;
+	width: 50px;
+	right: 0;
+	top: 0;
+	position: absolute;
+	height: 100%;
+	font-size: 0;
+    opacity: 0;
+    border-bottom: 0;
+}
+
+// Acceptance
+.wpcf7-acceptance {
+    background-color: $yellow;
+    padding: $sm;
+    display: block;
+    font-size: 90%;
+    line-height: 1.45;
+}
+
+// checkbox + radio
+.wpcf7-form-control-wrap {
+    .wpcf7-form-control {
+        .wpcf7-list-item {
+            display: block;
+
+            label {
+                input {
+                    width: auto;
+                    width: 1em;
+                    height: 1em;
+                }
+            }
+        }
+    }
+}
+  
+// checkbox (+ acceptance checkbox)
+.wpcf7-form .wpcf7-checkbox label,
+.wpcf7-form .wpcf7-acceptance label {
+    position: relative;
+    cursor: pointer;
+}
+.wpcf7-form .wpcf7-checkbox input[type=checkbox],
+.wpcf7-form .wpcf7-acceptance input[type=checkbox] {
+    position: relative;
+    visibility: hidden;
+    margin-right: .7em;
+}
+
+.wpcf7-form .wpcf7-checkbox input[type=checkbox] + span:before,
+.wpcf7-form .wpcf7-checkbox input[type=checkbox] + span:after,
+.wpcf7-form .wpcf7-acceptance input[type=checkbox] + span:before,
+.wpcf7-form .wpcf7-acceptance input[type=checkbox] + span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    top: .3em;
+    left: 0;
+    border-radius: 4px; 
+    background-color: $input_bg;
+}
+.wpcf7-form .wpcf7-checkbox input[type=checkbox] + span:after,
+.wpcf7-form .wpcf7-acceptance input[type=checkbox] + span:after {
+    content: '';
+    visibility: hidden;
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Ctitle%3Ef-check%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpolygon%20points%3D%2211.714%2027.786%201%2017.071%205.286%2012.786%2011.714%2019.214%2026.714%204.214%2031%208.5%2011.714%2027.786%22%20fill%3D%22%23000000%22%3E%3C%2Fpolygon%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+    background-size: 54%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.wpcf7-form .wpcf7-checkbox input[type=checkbox]:checked + span:before,
+.wpcf7-form .wpcf7-acceptance input[type=checkbox]:checked + span:before {
+    background: transparent;
+}
+
+.wpcf7-form .wpcf7-checkbox input[type=checkbox]:checked + span:after,
+.wpcf7-form .wpcf7-acceptance input[type=checkbox]:checked + span:after {
+    visibility: visible;
+}
+
+// radio
+.wpcf7-form .wpcf7-radio label {
+    position: relative;
+    cursor: pointer;
+}
+.wpcf7-form .wpcf7-radio input[type=radio] {
+    position: relative;
+    visibility: hidden;
+    margin-right: 10px;
+}
+.wpcf7-form .wpcf7-radio input[type=radio] + span:before,
+.wpcf7-form .wpcf7-radio input[type=radio] + span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    top: 0;
+    left: 0;
+    border-radius: 50%; 
+    background-color: $input_bg;
+}
+.wpcf7-form .wpcf7-radio input[type=radio] + span:after {
+    content: '';
+    visibility: hidden;
+    height: 8px;
+    width: 8px;
+    top: .25em;
+    left: .25em;
+    background-color: #000000;
+}
+
+.wpcf7-form .wpcf7-radio input[type=radio]:checked + span:before {
+    background-color: $input_bg;
+}
+.wpcf7-form .wpcf7-radio input[type=radio]:checked + span:after {
+    visibility: visible;
+}
+
+// Hide empty Ps
+.wpcf7-form {
+    p:empty {
+        display: none;
+    }
+}

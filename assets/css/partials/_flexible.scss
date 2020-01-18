@@ -1,0 +1,151 @@
+// Slider
+.slider_content {
+    height: 340px;
+    visibility: hidden;
+
+    @include media-breakpoint-up(md) {
+        height: 440px;
+    }
+
+    div,
+    figure {
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    figure {
+        @include media-breakpoint-up(md) {
+            border-left: 10px solid $w;
+            border-right: 10px solid $w;
+        }
+    }
+
+    .slick-arrow {
+        width: 60px;
+        height: 60px;
+        border: 0;
+        background-color: $w;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+        z-index: 2;
+        text-indent: -9999px;
+        display: none;
+    
+        &.slick-prev {
+            left: $m;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+                background-image: url("data:image/svg+xml,%3C!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In --%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='35.4px' height='55.2px' viewBox='0 0 35.4 55.2' style='enable-background:new 0 0 35.4 55.2;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23384773;stroke-width:11;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Cdefs%3E%3C/defs%3E%3Cpolyline class='st0' points='31.5,3.9 7.8,27.6 31.5,51.3 '/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-position: 19px center;
+                background-size: 30%;
+            }
+        }
+
+        &.slick-next {
+            right: $m;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+                background-image: url("data:image/svg+xml,%3C!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In --%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='35.4px' height='55.2px' viewBox='0 0 35.4 55.2' style='enable-background:new 0 0 35.4 55.2;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23384773;stroke-width:11;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Cdefs%3E%3C/defs%3E%3Cpolyline class='st0' points='3.9,51.3 27.6,27.6 3.9,3.9 '/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-position: 23px center;
+                background-size: 30%;
+            }
+        }
+    }  
+}
+
+// Zitat
+.zitat {
+    + cite {
+        display: block;
+    }
+}
+
+// Buttons
+.buttons {
+    .button {
+        margin-right: $s;
+
+        &.button_fw {
+            width: 100%;
+        }
+    }
+}
+
+// Features
+.flex_features {
+    .flex_feature {
+        min-height: 150px;
+    }
+
+    .loader_wrapper {
+        height: 100%;
+
+        @include media-breakpoint-up(md) {
+            height: auto;
+        }
+
+        figure {
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+
+            @include media-breakpoint-up(md) {
+                min-height: 180px;
+            }
+        }
+    }
+
+    .col_inner {
+        background-color: $c2;
+        height: 100%;
+
+        > .row {
+            height: 100%;
+        }
+    }
+
+    .feature_text {
+        margin-top: $s;
+        margin-bottom: $s;
+
+        @include media-breakpoint-up(md) {
+            padding-left: $s;
+            padding-right: $s;
+        }
+    }
+}
+
+// Bild
+.flex_bild {
+    .img_subline {
+        font-size: 90%;
+        line-height: 1.4;
+        margin-top: $xs;
+        opacity: .8;
+        font-style: italic;
+    }
+}
+
+// Editor
+.flex_editor {
+    
+}
