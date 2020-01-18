@@ -147,15 +147,6 @@ img,svg{max-width:100%;height:auto}
 hr{display:block;clear:both;margin-top:15px;margin-bottom:20px;border:0;border-top:1px solid #ddd}
 .shy{clip:rect(1px,1px,1px,1px);position:fixed}
 .cf:after{content:"";display:table;clear:both}
-a,a:link,a:focus,a:active,a:visited{color:#39cccc;text-decoration:none;position:relative;opacity:1;-webkit-transition:opacity .3s;transition:opacity .3s}
-a:hover,a:link:hover,a:focus:hover,a:active:hover,a:visited:hover{opacity:.7}
-a.link_ghost,a:link.link_ghost,a:focus.link_ghost,a:active.link_ghost,a:visited.link_ghost{color:#39cccc}
-.txt a,.txt a:link,.txt a:focus,.txt a:active,.txt a:visited,.links a,.links a:link,.links a:focus,.links a:active,.links a:visited{color:#39cccc;text-decoration:none;position:relative;border-bottom:1px solid rgba(57,204,204,0.5)}
-.txt a:hover,.links a:hover{border-bottom:1px solid #39cccc}
-a.button,.button{background-color:#0074d9;color:#fff;font-weight:700;font-size:80%;letter-spacing:.1em;text-transform:uppercase;padding:10px 15px;display:inline-block;border-radius:5px}
-a.button.button_wide,.button.button_wide{width:100%}
-a.button.download,.button.download{padding-right:15px}
-a.button.download::after,.button.download::after{content:none}
 ul,ol{padding:0}
 ul li,ol li{list-style:none;margin-left:0;line-height:1.55}
 ul li+li,ol li+li{margin-top:.5em}
@@ -167,6 +158,15 @@ ul li+li,ol li+li{margin-top:.5em}
 .center{text-align:center}
 .loader_wrapper{background-color:rgba(0,116,217,0.5)}
 .button span.genericons-neue{font-size:140%;margin-right:.2em;position:relative;top:-.1em}
+a,a:link,a:focus,a:active,a:visited{color:#39cccc;text-decoration:none;position:relative;opacity:1;-webkit-transition:opacity .3s;transition:opacity .3s}
+a:hover,a:link:hover,a:focus:hover,a:active:hover,a:visited:hover{opacity:.7}
+a.link_ghost,a:link.link_ghost,a:focus.link_ghost,a:active.link_ghost,a:visited.link_ghost{color:#39cccc}
+.txt a,.txt a:link,.txt a:focus,.txt a:active,.txt a:visited,.links a,.links a:link,.links a:focus,.links a:active,.links a:visited{color:#39cccc;text-decoration:none;position:relative;border-bottom:1px solid}
+.txt a:hover,.links a:hover{border-bottom:1px solid}
+a.button,.button{background-color:#0074d9;color:#fff;font-weight:700;font-size:80%;letter-spacing:.1em;text-transform:uppercase;padding:10px 15px;display:inline-block;border-radius:5px}
+a.button.button_wide,.button.button_wide{width:100%}
+a.button.download,.button.download{padding-right:15px}
+a.button.download::after,.button.download::after{content:none}
 .wrapper{position:relative}
 .wrapper.wrapper_vspace_big{padding-top:60px;padding-bottom:60px}
 .wrapper .w_bgimg{position:absolute;top:0;right:0;bottom:0;left:0;opacity:.3;background-size:cover;background-position:center}

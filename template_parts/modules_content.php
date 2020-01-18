@@ -1,7 +1,10 @@
 
 <style>
     .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .columncolor {
-        color: <?php echo $columncolor; ?>
+        color: <?php echo $columncolor; ?>;
+    }
+    .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .columncolor a {
+        color: <?php echo $columncolor; ?>;
     }
 </style>
 

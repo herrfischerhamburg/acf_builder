@@ -1,11 +1,11 @@
 {
-    "key": "group_5a01a0da9c22d",
-    "title": "Footer",
+    "key": "group_5e22639cebe2e",
+    "title": "Modules - Row",
     "fields": [
         {
-            "key": "field_5a01a0df1989a",
-            "label": "Verbände",
-            "name": "_footer_verbaende",
+            "key": "field_5e22639cede4d",
+            "label": "Row",
+            "name": "row",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -18,14 +18,14 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "table",
-            "button_label": "",
+            "layout": "block",
+            "button_label": "Row",
             "sub_fields": [
                 {
-                    "key": "field_5a01a0ee1989b",
-                    "label": "Verband",
-                    "name": "_footer_verbaende_verband",
-                    "type": "text",
+                    "key": "field_5e22639ceede1",
+                    "label": "Inhalt",
+                    "name": "",
+                    "type": "tab",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -34,17 +34,14 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "placement": "top",
+                    "endpoint": 0
                 },
                 {
-                    "key": "field_5a01a1031989c",
-                    "label": "Url",
-                    "name": "_url",
-                    "type": "text",
+                    "key": "field_5e22639ceedea",
+                    "label": "Clone Columns",
+                    "name": "clone_columns",
+                    "type": "clone",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -53,11 +50,13 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "clone": [
+                        "group_5e18bf695b02d"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
                 }
             ]
         }
@@ -65,26 +64,19 @@
     "location": [
         [
             {
-                "param": "page_template",
+                "param": "post_type",
                 "operator": "==",
-                "value": "tpl-home.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "tpl-home-2020.php"
+                "value": "post"
             }
         ]
     ],
-    "menu_order": 1000,
+    "menu_order": 0,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": 0,
     "description": "",
-    "modified": 1579108389
+    "modified": 1579358650
 }
