@@ -62,7 +62,43 @@
                 background-size: 30%;
             }
         }
-    }  
+    }
+
+    // Slider dots
+    .slick-dots {
+        position: absolute;
+        margin-bottom: 0;
+        bottom: $s;
+        text-align: center;
+        z-index: 2;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        li {
+            display: inline-block;
+            margin-left: $xxs;
+            margin-right: $xxs;
+            margin-top: 0;
+
+            &.slick-active {
+                button {
+                    opacity: .4;
+                }
+            }
+            
+            button {
+                background-color: $w;
+                border: none;
+                border-radius: 50%;
+                display: inline-block;
+                text-indent: -999px;
+                overflow: hidden;
+                height: 15px;
+                width: 15px;
+                padding: 0;
+            }
+        }
+    }
 }
 
 // Zitat
@@ -79,50 +115,6 @@
 
         &.button_fw {
             width: 100%;
-        }
-    }
-}
-
-// Features
-.flex_features {
-    .flex_feature {
-        min-height: 150px;
-    }
-
-    .loader_wrapper {
-        height: 100%;
-
-        @include media-breakpoint-up(md) {
-            height: auto;
-        }
-
-        figure {
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-
-            @include media-breakpoint-up(md) {
-                min-height: 180px;
-            }
-        }
-    }
-
-    .col_inner {
-        background-color: $c2;
-        height: 100%;
-
-        > .row {
-            height: 100%;
-        }
-    }
-
-    .feature_text {
-        margin-top: $s;
-        margin-bottom: $s;
-
-        @include media-breakpoint-up(md) {
-            padding-left: $s;
-            padding-right: $s;
         }
     }
 }

@@ -159,6 +159,8 @@
                         <?php $textalign = get_sub_field('col_text_align'); ?>
                         <?php $columnbgcolor = get_sub_field('col_bgcolor'); ?> 
                         <?php $columncolor = get_sub_field('col_color'); ?>
+                        <?php $columnnopadding = get_sub_field('no_padding'); ?>
+
                         <?php
                             // ACF image
                             if ( get_sub_field('rfc_col_bgimg') ) : 
@@ -193,7 +195,12 @@
                                 <?php if ( !empty($columnbgcolor)) { ?>col_columnbgcolor<?php } ?>
                             ">
 
-                            <div class="col_inner_bgcolor" style="background-color: <?php echo $columnbgcolor; ?>">
+                            <div class="
+                            col_inner_bgcolor
+                            <?php if ($columnnopadding != '0') { echo "p-0"; } ?> 
+                            " 
+                            style="background-color: <?php echo $columnbgcolor; ?>">
+                                
                                 <div class="
                                 col_inner_bgimg
                                 <?php if ($rfc_col_bgimg_fo != '0') { echo "row_fw_col_bgimg_o1"; } ?> 

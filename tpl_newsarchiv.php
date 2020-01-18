@@ -37,21 +37,17 @@
 								</h2>
 								
                                 <?php if ( has_post_thumbnail() ) { ?>
-                                    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'img-m' ); $image = $image[0]; ?>
+                                    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'img-l' ); $image = $image[0]; ?>
 									<div class="loader_wrapper">
 									<figure>
-                                        <a href="<?php the_permalink(); ?>">
-                                            <img src="<?php echo $image; ?>" alt="">
-                                        </a>
+										<img src="<?php echo $image; ?>" alt="">
 									</figure>
 									</div>
 
                                 <?php } else { ?>
 									<div class="loader_wrapper">
 									<figure>
-                                        <a href="<?php the_permalink(); ?>">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/news_placeholder.jpg" alt="">
-                                        </a>
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/img/news_placeholder.jpg" alt="">
 									</figure>
 									</div>
 

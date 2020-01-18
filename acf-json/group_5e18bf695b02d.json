@@ -1,6 +1,6 @@
 {
     "key": "group_5e18bf695b02d",
-    "title": "Modules - Row - Columns",
+    "title": "Modules - Row Regular - Columns",
     "fields": [
         {
             "key": "field_5e18c2d83bdd4",
@@ -426,6 +426,61 @@
                             ],
                             "min": "",
                             "max": ""
+                        },
+                        "layout_5e233b710f94b": {
+                            "key": "layout_5e233b710f94b",
+                            "name": "slider",
+                            "label": "Slider",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e233b810f94c",
+                                    "label": "Images",
+                                    "name": "images",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "collapsed": "",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "table",
+                                    "button_label": "",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5e233b8b0f94d",
+                                            "label": "Image",
+                                            "name": "image",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "id",
+                                            "preview_size": "square-xxs",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": ""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
                         }
                     },
                     "button_label": "Inhalte",
@@ -510,5 +565,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579365266
+    "modified": 1579367391
 }

@@ -111,6 +111,7 @@ add_image_size( 'square-xxs', 70, 70, true );
 add_image_size( 'square', 500, 500, true );
 add_image_size( 'img-s', 720, 480, true );
 add_image_size( 'img-m', 1100, 720, true );
+add_image_size( 'img-l', 1500, 720, true );
 add_image_size( 'img-xl', 1920, 1200, true );
 
 /**

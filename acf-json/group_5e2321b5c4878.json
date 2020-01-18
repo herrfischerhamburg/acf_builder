@@ -33,6 +33,25 @@
             "default_value": ""
         },
         {
+            "key": "field_5e2341cb602c0",
+            "label": "Kein Innenabstand",
+            "name": "no_padding",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Kein Innenabstand",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_5e1a0ccf2294a",
             "label": "Text Ausrichtung",
             "name": "col_text_align",
@@ -75,5 +94,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579361075
+    "modified": 1579368947
 }
