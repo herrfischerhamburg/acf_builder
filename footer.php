@@ -21,7 +21,7 @@
 			</div>
 
 			<div class="col-12">
-				<?php echo comicpress_copyright(); ?> Peter Krüger Catering
+				<?php echo comicpress_copyright(); ?> Kickstart projects
 			</div>
 		</div>
 	</div>

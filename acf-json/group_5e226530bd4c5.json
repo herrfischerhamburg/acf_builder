@@ -482,6 +482,33 @@
                             "min": "",
                             "max": ""
                         },
+                        "layout_5e234db699f8b": {
+                            "key": "layout_5e234db699f8b",
+                            "name": "divider",
+                            "label": "Divider",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e234dd499f8c",
+                                    "label": "Info",
+                                    "name": "",
+                                    "type": "message",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "Just a HR.",
+                                    "new_lines": "wpautop",
+                                    "esc_html": 0
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
                         "layout_5e22f54b07c34": {
                             "key": "layout_5e22f54b07c34",
                             "name": "leer",
@@ -651,5 +678,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579364897
+    "modified": 1579372015
 }

@@ -25,7 +25,7 @@
 }
 
 .moby-overlay.dark {
-	background: rgba($color: $c4, $alpha: .7);
+	background: rgba($color: $b, $alpha: .7);
 }
 
 .moby-overlay.light {
@@ -45,7 +45,7 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	background: $c4;
+	background: $b;
 	-webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
 	-o-transition: all 0.4s;
@@ -117,7 +117,7 @@
 			}
 
 			ul {
-				background-color: $c4;
+				background-color: $b;
 				padding-top: 0;
 				padding-bottom: $s;
 
@@ -193,7 +193,7 @@
 		font-weight: 400;
 		padding: 26px 30px;
 		padding-bottom: 90px;
-		background: $c4;
+		background: $b;
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -ms-flexbox;

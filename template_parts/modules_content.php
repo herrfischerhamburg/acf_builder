@@ -164,4 +164,13 @@ elseif( get_row_layout() == 'zitat' ): ?>
     </div>
 
 
+<?php // Divider
+elseif( get_row_layout() == 'divider' ): ?>
+    <div class="flex_inner <?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?>">
+        <div class="flex_inner_element">
+            <hr />
+        </div>
+    </div>
+
+
 <?php endif; ?>

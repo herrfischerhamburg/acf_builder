@@ -37,10 +37,10 @@ svg {
 hr {
     display: block;
     clear: both;
-    margin-top: $s;
-    margin-bottom: $sm;
+    margin-top: .5em;
+    margin-bottom: 2em;
     border: 0;
-    border-top: 1px solid $g2;
+    border-top: 1px dashed;
 }
 
 // Hide things
@@ -121,6 +121,6 @@ ul, ol {
         font-size: 140%;
         margin-right: .2em;
         position: relative;
-        top: -.1em;
+        top: -.05em;
     }
 }

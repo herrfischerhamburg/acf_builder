@@ -481,6 +481,33 @@
                             ],
                             "min": "",
                             "max": ""
+                        },
+                        "layout_5e234f5780445": {
+                            "key": "layout_5e234f5780445",
+                            "name": "divider",
+                            "label": "Divider",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e234f5a80446",
+                                    "label": "Info",
+                                    "name": "",
+                                    "type": "message",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "Just a HR.",
+                                    "new_lines": "wpautop",
+                                    "esc_html": 0
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
                         }
                     },
                     "button_label": "Inhalte",
@@ -565,5 +592,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579367391
+    "modified": 1579372405
 }
