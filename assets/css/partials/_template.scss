@@ -9,10 +9,10 @@
 .wrapper {
     position: relative;
 
-    &.wrapper_vspace_big {
-        padding-top: $l;
-        padding-bottom: $l;
-    }
+    // &.wrapper_vspace_big {
+    //     padding-top: $l;
+    //     padding-bottom: $l;
+    // }
 
     .w_bgimg {
         position: absolute;
@@ -29,20 +29,89 @@
 // wrapper options
 .wrapper {
     background-color: $w;
-    padding-top: $l;
-    padding-bottom: $l;
+    // padding-top: $l;
+    // padding-bottom: $l;
 
     // Column
     .col_inner {
         height: 100%;
         position: relative;
         
-        &.col_columnbgcolor {
-            .col_inner_bgcolor {
-                height: 100%;
-                
-                .col_inner_bgcolor_content {
-                    padding: $m $m;
+        .col_inner_bgcolor {
+            height: 100%;
+            
+            .col_inner_bgcolor_content {
+                padding: $m $m;
+                border: 1px solid 3px;
+
+                &.paddingY_xs_medium {
+                    padding-top: $xl;
+                    padding-bottom: $xl;
+                }
+                &.paddingY_xs_big {
+                    padding-top: $xxl;
+                    padding-bottom: $xxl;
+                }
+                &.paddingY_xs_verybig {
+                    padding-top: $xxxl;
+                    padding-bottom: $xxxl;
+                }
+    
+                @include media-breakpoint-up(sm) {
+                    &.paddingY_sm_small {
+                        padding-top: $l;
+                        padding-bottom: $l;
+                    }
+                    &.paddingY_sm_medium {
+                        padding-top: $xl;
+                        padding-bottom: $xl;
+                    }
+                    &.paddingY_sm_big {
+                        padding-top: $xxl;
+                        padding-bottom: $xxl;
+                    }
+                    &.paddingY_sm_verybig {
+                        padding-top: $xxxl;
+                        padding-bottom: $xxxl;
+                    }
+                }
+    
+                @include media-breakpoint-up(md) {
+                    &.paddingY_md_small {
+                        padding-top: $l;
+                        padding-bottom: $l;
+                    }
+                    &.paddingY_md_medium {
+                        padding-top: $xl;
+                        padding-bottom: $xl;
+                    }
+                    &.paddingY_md_big {
+                        padding-top: $xxl;
+                        padding-bottom: $xxl;
+                    }
+                    &.paddingY_md_verybig {
+                        padding-top: $xxxl;
+                        padding-bottom: $xxxl;
+                    }
+                }
+    
+                @include media-breakpoint-up(lg) {
+                    &.paddingY_lg_small {
+                        padding-top: $l;
+                        padding-bottom: $l;
+                    }
+                    &.paddingY_lg_medium {
+                        padding-top: $xl;
+                        padding-bottom: $xl;
+                    }
+                    &.paddingY_lg_big {
+                        padding-top: $xxl;
+                        padding-bottom: $xxl;
+                    }
+                    &.paddingY_lg_verybig {
+                        padding-top: $xxxl;
+                        padding-bottom: $xxxl;
+                    }
                 }
             }
         }
@@ -140,6 +209,76 @@
         .col_inner_bgcolor {
             height: 100%;
             padding: $l $s;
+
+            &.paddingY_xs_medium {
+                padding-top: $xl;
+                padding-bottom: $xl;
+            }
+            &.paddingY_xs_big {
+                padding-top: $xxl;
+                padding-bottom: $xxl;
+            }
+            &.paddingY_xs_verybig {
+                padding-top: $xxxl;
+                padding-bottom: $xxxl;
+            }
+
+            @include media-breakpoint-up(sm) {
+                &.paddingY_sm_small {
+                    padding-top: $l;
+                    padding-bottom: $l;
+                }
+                &.paddingY_sm_medium {
+                    padding-top: $xl;
+                    padding-bottom: $xl;
+                }
+                &.paddingY_sm_big {
+                    padding-top: $xxl;
+                    padding-bottom: $xxl;
+                }
+                &.paddingY_sm_verybig {
+                    padding-top: $xxxl;
+                    padding-bottom: $xxxl;
+                }
+            }
+
+            @include media-breakpoint-up(md) {
+                &.paddingY_md_small {
+                    padding-top: $l;
+                    padding-bottom: $l;
+                }
+                &.paddingY_md_medium {
+                    padding-top: $xl;
+                    padding-bottom: $xl;
+                }
+                &.paddingY_md_big {
+                    padding-top: $xxl;
+                    padding-bottom: $xxl;
+                }
+                &.paddingY_md_verybig {
+                    padding-top: $xxxl;
+                    padding-bottom: $xxxl;
+                }
+            }
+
+            @include media-breakpoint-up(lg) {
+                &.paddingY_lg_small {
+                    padding-top: $l;
+                    padding-bottom: $l;
+                }
+                &.paddingY_lg_medium {
+                    padding-top: $xl;
+                    padding-bottom: $xl;
+                }
+                &.paddingY_lg_big {
+                    padding-top: $xxl;
+                    padding-bottom: $xxl;
+                }
+                &.paddingY_lg_verybig {
+                    padding-top: $xxxl;
+                    padding-bottom: $xxxl;
+                }
+            }
 
             @include media-breakpoint-up(sm) {
                 padding: $l;

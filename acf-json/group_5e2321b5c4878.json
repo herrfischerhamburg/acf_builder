@@ -1,6 +1,6 @@
 {
     "key": "group_5e2321b5c4878",
-    "title": "Modules - Columns - Options (Colors)",
+    "title": "Modules - Columns - Options (Text + Colors)",
     "fields": [
         {
             "key": "field_5e1a2fa92d679",
@@ -11,7 +11,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -26,7 +26,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -60,7 +60,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -94,5 +94,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579368947
+    "modified": 1579446749
 }

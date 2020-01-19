@@ -1,6 +1,6 @@
 {
     "key": "group_5e22639cebe2e",
-    "title": "Modules - Rows",
+    "title": "Modules - Rows Regular",
     "fields": [
         {
             "key": "field_5e22639cede4d",
@@ -78,5 +78,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579366781
+    "modified": 1579446401
 }

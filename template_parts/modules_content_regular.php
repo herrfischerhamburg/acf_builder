@@ -126,10 +126,21 @@ elseif( get_row_layout() == 'buttons' ): ?>
 
 <?php // Slider
 elseif( get_row_layout() == 'slider' ): ?>
+    <?php $height_xs = get_sub_field('mcodryh_xs'); ?>
+    <?php $height_sm = get_sub_field('mcodryh_sm'); ?>
+    <?php $height_md = get_sub_field('mcodryh_md'); ?>
+    <?php $height_lg = get_sub_field('mcodryh_lg'); ?>   
+
     <div class="flex_inner <?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?>">
     <?php if ( have_rows('images') ) : ?>
         <div class="flex_inner_element">
-            <div class="slider_content">
+            <div class="
+                slider_content
+                <?php echo 'height_xs_'.$height_xs; ?>
+                <?php echo 'height_sm_'.$height_sm; ?>
+                <?php echo 'height_md_'.$height_md; ?>
+                <?php echo 'height_lg_'.$height_lg; ?>
+            ">
                 <?php while( have_rows('images') ) : the_row(); ?>
                 <?php
                     $image = get_sub_field( 'image' );

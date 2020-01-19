@@ -1,6 +1,6 @@
 {
     "key": "group_5e0a954b030dd",
-    "title": "Modules - Columns - Options (Devices)",
+    "title": "Modules - Columns - Options (Devices Column Widths)",
     "fields": [
         {
             "key": "field_5e22531701d50",
@@ -59,43 +59,6 @@
             "placeholder": ""
         },
         {
-            "key": "field_5e0a9586d6eee",
-            "label": "Laptop",
-            "name": "laptop",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "25",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "col-md-1": "1",
-                "col-md-2": "2",
-                "col-md-3": "3",
-                "col-md-4": "4",
-                "col-md-5": "5",
-                "col-md-6": "6",
-                "col-md-7": "7",
-                "col-md-8": "8",
-                "col-md-9": "9",
-                "col-md-10": "10",
-                "col-md-11": "11",
-                "col-md-12": "12"
-            },
-            "default_value": [
-                "col-md-6"
-            ],
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
-        },
-        {
             "key": "field_5e0a95c6d6eef",
             "label": "Tablet",
             "name": "tablet",
@@ -124,6 +87,43 @@
             },
             "default_value": [
                 "col-sm-12"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e0a9586d6eee",
+            "label": "Laptop",
+            "name": "laptop",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "col-md-1": "1",
+                "col-md-2": "2",
+                "col-md-3": "3",
+                "col-md-4": "4",
+                "col-md-5": "5",
+                "col-md-6": "6",
+                "col-md-7": "7",
+                "col-md-8": "8",
+                "col-md-9": "9",
+                "col-md-10": "10",
+                "col-md-11": "11",
+                "col-md-12": "12"
+            },
+            "default_value": [
+                "col-md-6"
             ],
             "allow_null": 0,
             "multiple": 0,
@@ -216,52 +216,6 @@
             "placeholder": ""
         },
         {
-            "key": "field_5e1efaa403777",
-            "label": "Offset Laptop",
-            "name": "offset_laptop",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5e22531701d50",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "25",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "0": "0",
-                "offset-md-1": "1",
-                "offset-md-2": "2",
-                "offset-md-3": "3",
-                "offset-md-4": "4",
-                "offset-md-5": "5",
-                "offset-md-6": "6",
-                "offset-md-7": "7",
-                "offset-md-8": "8",
-                "offset-md-9": "9",
-                "offset-md-10": "10",
-                "offset-md-11": "11",
-                "offset-md-12": "12"
-            },
-            "default_value": [
-                "Keins"
-            ],
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
-        },
-        {
             "key": "field_5e1efac903778",
             "label": "Offset Tablet",
             "name": "offset_tablet",
@@ -296,6 +250,52 @@
                 "offset-sm-10": "10",
                 "offset-sm-11": "11",
                 "offset-sm-12": "12"
+            },
+            "default_value": [
+                "Keins"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e1efaa403777",
+            "label": "Offset Laptop",
+            "name": "offset_laptop",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e22531701d50",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "0",
+                "offset-md-1": "1",
+                "offset-md-2": "2",
+                "offset-md-3": "3",
+                "offset-md-4": "4",
+                "offset-md-5": "5",
+                "offset-md-6": "6",
+                "offset-md-7": "7",
+                "offset-md-8": "8",
+                "offset-md-9": "9",
+                "offset-md-10": "10",
+                "offset-md-11": "11",
+                "offset-md-12": "12"
             },
             "default_value": [
                 "Keins"
@@ -371,5 +371,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579360591
+    "modified": 1579461314
 }

@@ -69,6 +69,12 @@
                         <?php $textalign = get_sub_field('col_text_align'); ?>
                         <?php $columnbgcolor = get_sub_field('col_bgcolor'); ?> 
                         <?php $columncolor = get_sub_field('col_color'); ?>
+                        <?php $columnnopadding = get_sub_field('no_padding'); ?>
+                        <?php $col_aos = get_sub_field('mcos_aos'); ?>
+                        <?php $paddingY_xs = get_sub_field('mdodrh_xs'); ?>
+                        <?php $paddingY_sm = get_sub_field('mdodrh_sm'); ?>
+                        <?php $paddingY_md = get_sub_field('mdodrh_md'); ?>
+                        <?php $paddingY_lg = get_sub_field('mdodrh_lg'); ?>
 
                         <?php if ( have_rows( 'column' ) ): ?>
 
@@ -91,14 +97,24 @@
                                 <?php if ( !empty($columnbgcolor)) { ?>col_columnbgcolor<?php } ?>
                             ">
 
-                            <div class="col_inner_bgcolor" style="background-color: <?php echo $columnbgcolor; ?>">
-                                <div class="col_inner_bgcolor_content">
-                                    <?php while( have_rows('column') ) : the_row(); ?>
-
-                                        <?php $gr_column = get_row_index(); ?>
-
-                                        <?php include 'modules_content.php'; ?>
-                                    <?php endwhile; ?>
+                            <div class="
+                            col_inner_bgcolor
+                            "                             
+                            style="background-color: <?php echo $columnbgcolor; ?>">
+                                <div class="
+                                col_inner_bgcolor_content
+                                <?php echo 'paddingY_xs_'.$paddingY_xs; ?>
+                                <?php echo 'paddingY_sm_'.$paddingY_sm; ?>
+                                <?php echo 'paddingY_md_'.$paddingY_md; ?>
+                                <?php echo 'paddingY_lg_'.$paddingY_lg; ?>
+                                <?php if ($columnnopadding != '0') { echo "p-0"; } ?> 
+                                ">
+                                    <div <?php if( $col_aos != '0') { echo 'data-aos="fade-up"'; }; ?>>
+                                        <?php while( have_rows('column') ) : the_row(); ?>
+                                            <?php $gr_column = get_row_index(); ?>
+                                            <?php include 'modules_content_regular.php'; ?>
+                                        <?php endwhile; ?>
+                                    </div>
                                 </div>
                             </div>
 
@@ -160,6 +176,11 @@
                         <?php $columnbgcolor = get_sub_field('col_bgcolor'); ?> 
                         <?php $columncolor = get_sub_field('col_color'); ?>
                         <?php $columnnopadding = get_sub_field('no_padding'); ?>
+                        <?php $col_aos = get_sub_field('mcos_aos'); ?>
+                        <?php $paddingY_xs = get_sub_field('mdodrh_xs'); ?>
+                        <?php $paddingY_sm = get_sub_field('mdodrh_sm'); ?>
+                        <?php $paddingY_md = get_sub_field('mdodrh_md'); ?>
+                        <?php $paddingY_lg = get_sub_field('mdodrh_lg'); ?>
 
                         <?php
                             // ACF image
@@ -172,7 +193,7 @@
                             endif;
                         ?>
                         <?php $rfc_col_bgimg_fo = get_sub_field('rfc_col_bgimg_fo'); ?>
-
+                        
                         <?php if ( have_rows( 'column' ) ): ?>
 
                             <div class="
@@ -187,8 +208,7 @@
                                 p-0
                                 <?php echo $textalign; ?>
                                 <?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?>
-                            "
-                            >  
+                            ">  
 
                             <div class="
                                 col_inner
@@ -197,6 +217,10 @@
 
                             <div class="
                             col_inner_bgcolor
+                            <?php echo 'paddingY_xs_'.$paddingY_xs; ?>
+                            <?php echo 'paddingY_sm_'.$paddingY_sm; ?>
+                            <?php echo 'paddingY_md_'.$paddingY_md; ?>
+                            <?php echo 'paddingY_lg_'.$paddingY_lg; ?>
                             <?php if ($columnnopadding != '0') { echo "p-0"; } ?> 
                             " 
                             style="background-color: <?php echo $columnbgcolor; ?>">
@@ -211,12 +235,12 @@
                                 <?php } ?>
                                 ></div>
                                 <div class="col_inner_bgcolor_content">
-                                    <?php while( have_rows('column') ) : the_row(); ?>
-
-                                        <?php $gr_column = get_row_index(); ?>
-
-                                        <?php include 'modules_content_fw.php'; ?>
-                                    <?php endwhile; ?>
+                                    <div <?php if( $col_aos != '0') { echo 'data-aos="fade-up"'; }; ?>>
+                                        <?php while( have_rows('column') ) : the_row(); ?>
+                                            <?php $gr_column = get_row_index(); ?>
+                                            <?php include 'modules_content_fw.php'; ?>
+                                        <?php endwhile; ?>
+                                    </div>
                                 </div>
                             </div>
 

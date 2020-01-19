@@ -21,18 +21,13 @@
 			</div>
 
 			<div class="col-12">
-				<?php echo comicpress_copyright(); ?> Kickstart projects
+				<?php echo acfpb_copyright(); ?> Kickstart projects
 			</div>
 		</div>
 	</div>
 </footer>
 
 <?php wp_footer(); ?>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-	AOS.init();
-</script>
 
 </body>
 
