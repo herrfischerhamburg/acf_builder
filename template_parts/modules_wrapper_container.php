@@ -22,9 +22,7 @@
             endif;
         ?>   
         
-        <section 
-            <?php /* Wrapper */ ?>
-            class="
+        <section class="
             wrapper
             <?php if ($w_bgcolor == 'wrapper_nobgcolor') { ?>
                 wrapper_nobgcolor
@@ -49,11 +47,17 @@
         
         <?php if ( have_rows( 'rows' ) ) : ?>
             <?php while ( have_rows( 'rows' ) ) : the_row(); ?>
+
+            <?php 
+                // Row
+                $r_double_bottom_margin = get_sub_field('mrr_dbm'); 
+            ?>
+
             <?php $gr_row = get_row_index(); ?>
 
                 <?php if ( have_rows( 'row_regular' ) ) : ?>
                     
-                    <div class="row">
+                    <div class="row <?php if ($r_double_bottom_margin == '1') { echo 'r_double_bottom_margin'; } ?> ">
 
                     <?php while ( have_rows( 'row_regular' ) ) : the_row(); ?>
                     <?php $gr_col = get_row_index(); ?>
@@ -130,12 +134,9 @@
 
         <?php elseif ( get_row_layout() == 'container_fw' ) : ?>
         <?php $gr_container = get_row_index(); ?>
-        <section
-        <?php /* Wrapper */ ?>
-            class="wrapper_fw"
-        >
-        <div class="container-fluid">
+        <section  class="wrapper_fw">
 
+        <div class="container-fluid">
         
         <?php if ( have_rows( 'rows_fw' ) ) : ?>
             <?php while ( have_rows( 'rows_fw' ) ) : the_row(); ?>

@@ -20,8 +20,8 @@
             "acfe_flexible_layouts_thumbnails": 0,
             "acfe_flexible_layouts_templates": 0,
             "acfe_flexible_layouts_placeholder": 0,
-            "acfe_flexible_close_button": 0,
-            "acfe_flexible_title_edition": 0,
+            "acfe_flexible_close_button": 1,
+            "acfe_flexible_title_edition": 1,
             "acfe_flexible_copy_paste": 0,
             "acfe_flexible_modal_edition": 0,
             "acfe_flexible_modal": {
@@ -37,7 +37,7 @@
                     "sub_fields": [
                         {
                             "key": "field_5e1cf078d0434",
-                            "label": "Inhalt",
+                            "label": "Content",
                             "name": "",
                             "type": "tab",
                             "instructions": "",
@@ -48,6 +48,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "acfe_permissions": "",
                             "placement": "top",
                             "endpoint": 0
                         },
@@ -74,7 +75,7 @@
                         },
                         {
                             "key": "field_5e1fa796b88c9",
-                            "label": "Wrapper Optionen",
+                            "label": "Wrapper Options",
                             "name": "",
                             "type": "tab",
                             "instructions": "",
@@ -85,12 +86,13 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "acfe_permissions": "",
                             "placement": "top",
                             "endpoint": 0
                         },
                         {
                             "key": "field_5e1fa7aab88ca",
-                            "label": "Hintergrundfarbe",
+                            "label": "Background color",
                             "name": "w_bgcolor",
                             "type": "color_picker",
                             "instructions": "",
@@ -101,11 +103,12 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "acfe_permissions": "",
                             "default_value": ""
                         },
                         {
                             "key": "field_5e22317767688",
-                            "label": "Hintergrundbild",
+                            "label": "Background image",
                             "name": "w_bgimg",
                             "type": "image",
                             "instructions": "",
@@ -116,6 +119,9 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "acfe_permissions": "",
+                            "acfe_uploader": "wp",
+                            "acfe_thumbnail": 0,
                             "return_format": "id",
                             "preview_size": "square-xxs",
                             "library": "all",
@@ -211,5 +217,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1579553221
+    "modified": 1579559318
 }

@@ -23,7 +23,7 @@
             "sub_fields": [
                 {
                     "key": "field_5e22639ceede1",
-                    "label": "Inhalt",
+                    "label": "Content",
                     "name": "",
                     "type": "tab",
                     "instructions": "",
@@ -34,6 +34,7 @@
                         "class": "",
                         "id": ""
                     },
+                    "acfe_permissions": "",
                     "placement": "top",
                     "endpoint": 0
                 },
@@ -57,6 +58,43 @@
                     "layout": "block",
                     "prefix_label": 0,
                     "prefix_name": 0
+                },
+                {
+                    "key": "field_5e2629cf3cb4c",
+                    "label": "Row options",
+                    "name": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_5e262b89f546a",
+                    "label": "Double bottom margin",
+                    "name": "mrr_dbm",
+                    "type": "true_false",
+                    "instructions": "Add a larger margin to the bottom of the row.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "message": "Larger margin to bottom",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
                 }
             ]
         }
@@ -78,5 +116,13 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579446401
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1579559927
 }

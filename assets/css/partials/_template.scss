@@ -33,48 +33,54 @@
     padding-top: $l;
     padding-bottom: $l;
 
-    // Column
-    .col_inner {
-        height: 100%;
-        position: relative;
-        
-        &.col_inner_bgcolor {
-            padding: $m;
+    .row {
+        &.r_double_bottom_margin {
+            margin-bottom: $m;
         }
-    }
 
-    .wrapper_anchor {
-        position: relative;
-        top: -$xl;
-    }
-
-    &.row_bgcolor {
-        padding-top: $l;
-        padding-bottom: $l;
-        background-color: $c1;
-
-        .row_bgcolor_color {
-            h2,
-            h3,
-            p {
-                color: $w !important;
+        // Column
+        .col_inner {
+            height: 100%;
+            position: relative;
+            
+            &.col_inner_bgcolor {
+                padding: $m;
             }
         }
-    }
 
-    // widths
-    > .container {
-        > .row {
-            > [class*="col-"] {
-                padding-top: 0;
-                padding-bottom: 0;
+        .wrapper_anchor {
+            position: relative;
+            top: -$xl;
+        }
+
+        &.row_bgcolor {
+            padding-top: $l;
+            padding-bottom: $l;
+            background-color: $c1;
+
+            .row_bgcolor_color {
+                h2,
+                h3,
+                p {
+                    color: $w !important;
+                }
             }
         }
-    }
 
-    // to top
-    &.totop {
-        margin-top: -$l;
+        // widths
+        > .container {
+            > .row {
+                > [class*="col-"] {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        // to top
+        &.totop {
+            margin-top: -$l;
+        }
     }
 }
 
