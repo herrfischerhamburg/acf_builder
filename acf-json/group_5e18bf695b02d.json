@@ -15,6 +15,8 @@
                 "class": "",
                 "id": ""
             },
+            "acfe_permissions": "",
+            "acfe_repeater_stylised_button": 0,
             "collapsed": "",
             "min": 0,
             "max": 0,
@@ -36,6 +38,27 @@
                     },
                     "placement": "top",
                     "endpoint": 0
+                },
+                {
+                    "key": "field_5e18c37e3bdd6",
+                    "label": "Breite der Column",
+                    "name": "groesse",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_5e0a954b030dd"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
                 },
                 {
                     "key": "field_5e18c5073aa3f",
@@ -574,48 +597,6 @@
                     "prefix_name": 0
                 },
                 {
-                    "key": "field_5e18c37e3bdd6",
-                    "label": "Breite der Column",
-                    "name": "groesse",
-                    "type": "clone",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "clone": [
-                        "group_5e0a954b030dd"
-                    ],
-                    "display": "seamless",
-                    "layout": "block",
-                    "prefix_label": 0,
-                    "prefix_name": 0
-                },
-                {
-                    "key": "field_5e24ac22b07f8",
-                    "label": "Device related paddings",
-                    "name": "mrrc_paddings",
-                    "type": "clone",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "clone": [
-                        "group_5e249ffb08f16"
-                    ],
-                    "display": "seamless",
-                    "layout": "block",
-                    "prefix_label": 0,
-                    "prefix_name": 0
-                },
-                {
                     "key": "field_5e247665038fb",
                     "label": "Other Options",
                     "name": "",
@@ -672,5 +653,13 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579468342
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1579554390
 }

@@ -15,6 +15,7 @@
                 "class": "",
                 "id": ""
             },
+            "acfe_permissions": "",
             "message": "Offset",
             "default_value": 0,
             "ui": 0,
@@ -22,9 +23,9 @@
             "ui_off_text": ""
         },
         {
-            "key": "field_5e0aa21d50210",
-            "label": "Desktop",
-            "name": "desktop",
+            "key": "field_5e0a95edd6ef0",
+            "label": "Smartphones",
+            "name": "smartphones",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -34,22 +35,23 @@
                 "class": "",
                 "id": ""
             },
+            "acfe_permissions": "",
             "choices": {
-                "col-lg-1": "1",
-                "col-lg-2": "2",
-                "col-lg-3": "3",
-                "col-lg-4": "4",
-                "col-lg-5": "5",
-                "col-lg-6": "6",
-                "col-lg-7": "7",
-                "col-lg-8": "8",
-                "col-lg-9": "9",
-                "col-lg-10": "10",
-                "col-lg-11": "11",
-                "col-lg-12": "12"
+                "col-1": "1",
+                "col-2": "2",
+                "col-3": "3",
+                "col-4": "4",
+                "col-5": "5",
+                "col-6": "6",
+                "col-7": "7",
+                "col-8": "8",
+                "col-9": "9",
+                "col-10": "10",
+                "col-11": "11",
+                "col-12": "12"
             },
             "default_value": [
-                "col-lg-12"
+                "col-12"
             ],
             "allow_null": 0,
             "multiple": 0,
@@ -71,6 +73,7 @@
                 "class": "",
                 "id": ""
             },
+            "acfe_permissions": "",
             "choices": {
                 "col-sm-1": "1",
                 "col-sm-2": "2",
@@ -108,6 +111,7 @@
                 "class": "",
                 "id": ""
             },
+            "acfe_permissions": "",
             "choices": {
                 "col-md-1": "1",
                 "col-md-2": "2",
@@ -123,7 +127,7 @@
                 "col-md-12": "12"
             },
             "default_value": [
-                "col-md-6"
+                "col-md-12"
             ],
             "allow_null": 0,
             "multiple": 0,
@@ -133,9 +137,9 @@
             "placeholder": ""
         },
         {
-            "key": "field_5e0a95edd6ef0",
-            "label": "Smartphones",
-            "name": "smartphones",
+            "key": "field_5e0aa21d50210",
+            "label": "Desktop",
+            "name": "desktop",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -145,22 +149,23 @@
                 "class": "",
                 "id": ""
             },
+            "acfe_permissions": "",
             "choices": {
-                "col-1": "1",
-                "col-2": "2",
-                "col-3": "3",
-                "col-4": "4",
-                "col-5": "5",
-                "col-6": "6",
-                "col-7": "7",
-                "col-8": "8",
-                "col-9": "9",
-                "col-10": "10",
-                "col-11": "11",
-                "col-12": "12"
+                "col-lg-1": "1",
+                "col-lg-2": "2",
+                "col-lg-3": "3",
+                "col-lg-4": "4",
+                "col-lg-5": "5",
+                "col-lg-6": "6",
+                "col-lg-7": "7",
+                "col-lg-8": "8",
+                "col-lg-9": "9",
+                "col-lg-10": "10",
+                "col-lg-11": "11",
+                "col-lg-12": "12"
             },
             "default_value": [
-                "col-12"
+                "col-lg-12"
             ],
             "allow_null": 0,
             "multiple": 0,
@@ -170,9 +175,9 @@
             "placeholder": ""
         },
         {
-            "key": "field_5e1ef8b405cbb",
-            "label": "Offset Desktop",
-            "name": "offset_desktop",
+            "key": "field_5e1efae003779",
+            "label": "Offset Smartphones",
+            "name": "offset_smartphones",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -192,18 +197,18 @@
             },
             "choices": {
                 "0": "0",
-                "offset-lg-1": "1",
-                "offset-lg-2": "2",
-                "offset-lg-3": "3",
-                "offset-lg-4": "4",
-                "offset-lg-5": "5",
-                "offset-lg-6": "6",
-                "offset-lg-7": "7",
-                "offset-lg-8": "8",
-                "offset-lg-9": "9",
-                "offset-lg-10": "10",
-                "offset-lg-11": "11",
-                "offset-lg-12": "12"
+                "offset-1": "1",
+                "offset-2": "2",
+                "offset-3": "3",
+                "offset-4": "4",
+                "offset-5": "5",
+                "offset-6": "6",
+                "offset-7": "7",
+                "offset-8": "8",
+                "offset-9": "9",
+                "offset-10": "10",
+                "offset-11": "11",
+                "offset-12": "12"
             },
             "default_value": [
                 "Keins"
@@ -308,9 +313,9 @@
             "placeholder": ""
         },
         {
-            "key": "field_5e1efae003779",
-            "label": "Offset Smartphones",
-            "name": "offset_smartphones",
+            "key": "field_5e1ef8b405cbb",
+            "label": "Offset Desktop",
+            "name": "offset_desktop",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -330,18 +335,18 @@
             },
             "choices": {
                 "0": "0",
-                "offset-1": "1",
-                "offset-2": "2",
-                "offset-3": "3",
-                "offset-4": "4",
-                "offset-5": "5",
-                "offset-6": "6",
-                "offset-7": "7",
-                "offset-8": "8",
-                "offset-9": "9",
-                "offset-10": "10",
-                "offset-11": "11",
-                "offset-12": "12"
+                "offset-lg-1": "1",
+                "offset-lg-2": "2",
+                "offset-lg-3": "3",
+                "offset-lg-4": "4",
+                "offset-lg-5": "5",
+                "offset-lg-6": "6",
+                "offset-lg-7": "7",
+                "offset-lg-8": "8",
+                "offset-lg-9": "9",
+                "offset-lg-10": "10",
+                "offset-lg-11": "11",
+                "offset-lg-12": "12"
             },
             "default_value": [
                 "Keins"
@@ -371,5 +376,13 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579461314
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1579554156
 }

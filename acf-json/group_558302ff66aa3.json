@@ -15,6 +15,19 @@
                 "class": "",
                 "id": ""
             },
+            "acfe_permissions": "",
+            "acfe_flexible_stylised_button": 1,
+            "acfe_flexible_layouts_thumbnails": 0,
+            "acfe_flexible_layouts_templates": 0,
+            "acfe_flexible_layouts_placeholder": 0,
+            "acfe_flexible_close_button": 0,
+            "acfe_flexible_title_edition": 0,
+            "acfe_flexible_copy_paste": 0,
+            "acfe_flexible_modal_edition": 0,
+            "acfe_flexible_modal": {
+                "acfe_flexible_modal_enabled": "0"
+            },
+            "acfe_flexible_layouts_state": "",
             "layouts": {
                 "layout_5e1cef79736ed": {
                     "key": "layout_5e1cef79736ed",
@@ -190,5 +203,13 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1579370560
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1579553221
 }
