@@ -19,8 +19,89 @@
 
 	<style>
 		
-	</style>
+
+
+<?php if ( have_rows( 'container' ) ): ?>
+<?php while ( have_rows( 'container' ) ) : the_row(); ?>
+<?php if ( get_row_layout() == 'container' ) : ?>
+<?php $gr_container = get_row_index(); ?>
+<?php if ( have_rows( 'rows' ) ) : ?>
+<?php while ( have_rows( 'rows' ) ) : the_row(); ?>
+<?php $gr_row = get_row_index(); ?>
+<?php if ( have_rows( 'row_regular' ) ) : ?>
+<?php while ( have_rows( 'row_regular' ) ) : the_row(); ?>
+<?php $gr_col = get_row_index(); ?>
+<?php if ( have_rows( 'column' ) ): ?>
+
+	<?php while( have_rows('column') ) : the_row(); ?>
+		<?php $gr_column = get_row_index(); ?>
+	<?php endwhile; ?>
+                          
+<?php else: ?>
+<?php // no layouts found ?>
+<?php endif; ?>
+<?php endwhile; ?>
+<?php else : ?>
+<?php // no rows found ?>
+<?php endif; ?>
+<?php endwhile; ?>
+<?php else : ?>
+<?php // no rows found ?>
+<?php endif; ?>
+
+
+
+<?php elseif ( get_row_layout() == 'container_fw' ) : ?>
+<?php $gr_container = get_row_index(); ?>
+<?php if ( have_rows( 'rows_fw' ) ) : ?>
+<?php while ( have_rows( 'rows_fw' ) ) : the_row(); ?>
+<?php $gr_row = get_row_index(); ?>
+<?php if ( have_rows( 'row' ) ) : ?>
+<?php while ( have_rows( 'row' ) ) : the_row(); ?>
+<?php $gr_col = get_row_index(); ?>
+<?php if ( have_rows( 'column' ) ): ?>
+<?php while( have_rows('column') ) : the_row(); ?>
+<?php $gr_column = get_row_index(); ?>
+
+<?php if( get_row_layout() == 'buttons' ): ?>
+	<?php if ( get_sub_field('button_bgcolor') ) : ?>
+	.<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .button  {
+		background-color: <?php echo get_sub_field('button_bgcolor'); ?> !important;
+	}
+	<?php endif; ?>
+
+	<?php if ( get_sub_field('button_color') ) : ?>
+	.<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .button {
+		color: <?php echo get_sub_field('button_color'); ?> !important;
+	}
 	
+<?php endif; ?>
+
+<?php endif; ?>
+<?php endwhile; ?>
+<?php else: ?>
+<?php // no layouts found ?>
+<?php endif; ?>
+<?php endwhile; ?>
+<?php else : ?>
+<?php // no rows found ?>
+<?php endif; ?>
+<?php endwhile; ?>
+<?php else : ?>
+<?php // no rows found ?>
+<?php endif; ?>
+
+
+<?php endif; ?>
+
+
+<?php endwhile; ?>
+<?php else: ?>
+<?php // no layouts found ?>
+<?php endif; ?>
+
+</style>
+
 	<?php wp_head(); ?>
 </head>
 
