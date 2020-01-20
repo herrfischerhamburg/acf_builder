@@ -86,7 +86,7 @@ textarea{overflow:auto}
 optgroup{font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
-html{font-size:112.5%}
+html{font-size:105%}
 body{font-weight:400;line-height:1.65}
 p{margin-bottom:1.15rem}
 h1,h2,h3,h4,h5{margin:2.75rem 0 1.05rem;font-family:'Poppins',sans-serif;font-weight:400;line-height:1.15}
@@ -267,7 +267,8 @@ select,.wpcf7-date{-webkit-appearance:none;-moz-appearance:none;appearance:none;
 @-o-viewport{width:auto !important}
 @viewport{width:auto !important}
 div#ui-datepicker-div{z-index:1000 !important}
-@media(min-width:576px){.wrapper .col_inner .col_inner_bgcolor .col_inner_bgcolor_content.paddingY_sm_small{padding-top:60px;padding-bottom:60px}
+@media(min-width:576px){html{font-size:112.5%}
+.wrapper .col_inner .col_inner_bgcolor .col_inner_bgcolor_content.paddingY_sm_small{padding-top:60px;padding-bottom:60px}
 .wrapper .col_inner .col_inner_bgcolor .col_inner_bgcolor_content.paddingY_sm_medium{padding-top:80px;padding-bottom:80px}
 .wrapper .col_inner .col_inner_bgcolor .col_inner_bgcolor_content.paddingY_sm_big{padding-top:120px;padding-bottom:120px}
 .wrapper .col_inner .col_inner_bgcolor .col_inner_bgcolor_content.paddingY_sm_verybig{padding-top:160px;padding-bottom:160px}
