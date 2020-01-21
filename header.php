@@ -13,14 +13,9 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900|Permanent+Marker&display=swap" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Roboto+Condensed:400,700,900&display=swap" rel="stylesheet"> 
-
-	<style>
-		
-
-
+<style>
 <?php if ( have_rows( 'container' ) ): ?>
 <?php while ( have_rows( 'container' ) ) : the_row(); ?>
 <?php if ( get_row_layout() == 'container' ) : ?>
@@ -125,7 +120,8 @@ if( get_row_layout() == 'buttons' ): ?>
 
 </style>
 
-	<?php wp_head(); ?>
+<?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -149,7 +145,7 @@ if( get_row_layout() == 'buttons' ): ?>
 								)); 
 							?>
 							<div class="menu_phone">
-								<strong>Fon:</strong> 0151 52564226
+								<strong>Fon:</strong> 0151 XXXXXXXX
 							</div>
 						</nav>
 					</div>
