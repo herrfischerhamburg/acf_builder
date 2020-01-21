@@ -172,7 +172,7 @@ a.button.download::after,.button.download::after{content:none}
 .wrapper .w_bgimg{position:absolute;top:0;right:0;bottom:0;left:0;opacity:.3;background-size:cover;background-position:center}
 .wrapper{background-color:#fff;padding-top:60px;padding-bottom:60px}
 .wrapper .row.r_double_bottom_margin{margin-bottom:30px}
-.wrapper .row .col_inner{height:100%;position:relative}
+.wrapper .row .col_inner{position:relative}
 .wrapper .row .col_inner.col_inner_bgcolor{padding:30px}
 .wrapper .row .wrapper_anchor{position:relative;top:-80px}
 .wrapper .row.row_bgcolor{padding-top:60px;padding-bottom:60px;background-color:#0074d9}

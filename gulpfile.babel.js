@@ -171,8 +171,8 @@ gulp.task( 'stylesRTL', () => {
 			})
 		)
 		.on( 'error', sass.logError )
-		.pipe( sourcemaps.write({ includeContent: false }) )
-		.pipe( sourcemaps.init({ loadMaps: true }) )
+		// .pipe( sourcemaps.write({ includeContent: false }) )
+		// .pipe( sourcemaps.init({ loadMaps: true }) )
 		.pipe( autoprefixer( config.BROWSERS_LIST ) )
 		.pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
 		.pipe( rename({ suffix: '-rtl' }) ) // Append "-rtl" to the filename.

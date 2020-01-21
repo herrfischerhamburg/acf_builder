@@ -73,7 +73,7 @@
                         <?php $textalign = get_sub_field('col_text_align'); ?>
                         <?php $columnbgcolor = get_sub_field('col_bgcolor'); ?> 
                         <?php $columncolor = get_sub_field('col_color'); ?>
-                        <?php $columnnopadding = get_sub_field('no_padding'); ?>
+                        <?php $col_height = get_sub_field('col_sh'); ?>
                         <?php $col_aos = get_sub_field('mcos_aos'); ?>
 
                         <?php if ( have_rows( 'column' ) ): ?>
@@ -93,11 +93,10 @@
                                 col_inner
                                 <?php if ( !empty($columnbgcolor)) { ?>col_inner_bgcolor<?php } ?>
                                 "
-                                <?php if ( !empty($columnbgcolor)) { ?>style="background-color: <?php echo $columnbgcolor; ?>"<?php } ?>
+                                <?php if ( !empty($columnbgcolor)) { ?>style="background-color: <?php echo $columnbgcolor; ?>; height: <?php echo $col_height; ?>;"<?php } ?>
                             >
                                 <div class="
                                 col_inner_content
-                                <?php if ($columnnopadding != '0') { echo "p-0"; } ?> 
                                 ">
                                     <div <?php if( $col_aos != '0') { echo 'data-aos="fade-up"'; }; ?>>
                                         <?php while( have_rows('column') ) : the_row(); ?>
@@ -160,7 +159,6 @@
                         <?php $textalign = get_sub_field('col_text_align'); ?>
                         <?php $columnbgcolor = get_sub_field('col_bgcolor'); ?> 
                         <?php $columncolor = get_sub_field('col_color'); ?>
-                        <?php $columnnopadding = get_sub_field('no_padding'); ?>
                         <?php $col_aos = get_sub_field('mcos_aos'); ?>
                         <?php $paddingY_xs = get_sub_field('mdodrh_xs'); ?>
                         <?php $paddingY_sm = get_sub_field('mdodrh_sm'); ?>
@@ -204,7 +202,6 @@
                             <?php echo 'paddingY_sm_'.$paddingY_sm; ?>
                             <?php echo 'paddingY_md_'.$paddingY_md; ?>
                             <?php echo 'paddingY_lg_'.$paddingY_lg; ?>
-                            <?php if ($columnnopadding != '0') { echo "p-0"; } ?> 
                             " 
                             style="background-color: <?php echo $columnbgcolor; ?>">
                                 

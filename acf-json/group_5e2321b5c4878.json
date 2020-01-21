@@ -33,11 +33,11 @@
             "default_value": ""
         },
         {
-            "key": "field_5e2341cb602c0",
-            "label": "Kein Innenabstand",
-            "name": "no_padding",
-            "type": "true_false",
-            "instructions": "",
+            "key": "field_5e276c7a4e707",
+            "label": "Columns height",
+            "name": "col_sh",
+            "type": "radio",
+            "instructions": "Height of columns.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -45,11 +45,17 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Kein Innenabstand",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
+            "acfe_permissions": "",
+            "choices": {
+                "auto": "Auto",
+                "100%": "100% (same height as highest sibling in row)"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
         },
         {
             "key": "field_5e1a0ccf2294a",
@@ -94,5 +100,13 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579446749
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1579642113
 }
