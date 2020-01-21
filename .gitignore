@@ -80,4 +80,4 @@ assets/img/.DS_Store
 
 # VS Code #
 ###########
-*.code-workspace
+**.code-workspace
