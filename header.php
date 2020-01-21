@@ -31,12 +31,14 @@
 <?php while( have_rows('column') ) : the_row(); ?>
 <?php $gr_column = get_row_index(); ?>
 
+<?php if ( $columncolor != NULL ) : ?>
 .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .columncolor {
 	color: <?php echo $columncolor; ?>;
 }
 .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .columncolor a {
 	color: <?php echo $columncolor; ?>;
 }
+<?php endif; ?>
 
 <?php // Buttons
 if( get_row_layout() == 'buttons' ): ?>
