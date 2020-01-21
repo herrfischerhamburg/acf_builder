@@ -79,13 +79,13 @@
                         <?php if ( have_rows( 'column' ) ): ?>
 
                             <div class="<?php echo $smartphones; ?>
-                                <?php if ( $offset_smartphones !== '0') { echo $offset_smartphones; } ?>
+                                <?php if ( $offset_smartphones != '0') { echo $offset_smartphones; } ?>
                                 <?php echo $tablet; ?>
-                                <?php if ( $offset_tablet !== '0') { echo $offset_tablet; } ?>
+                                <?php if ( $offset_tablet != '0') { echo $offset_tablet; } ?>
                                 <?php echo $laptop; ?>
-                                <?php if ( $offset_laptop !== '0') { echo $offset_laptop; } ?>
+                                <?php if ( $offset_laptop != '0') { echo $offset_laptop; } ?>
                                 <?php echo $desktop; ?>
-                                <?php if ( $offset_desktop !== '0') { echo $offset_desktop; } ?>
+                                <?php if ( $offset_desktop != '0') { echo $offset_desktop; } ?>
                                 <?php echo $textalign; ?>                                
                                 <?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?>">  
 
