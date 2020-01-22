@@ -41,7 +41,7 @@
                 },
                 {
                     "key": "field_5e18c37e3bdd6",
-                    "label": "Breite der Column",
+                    "label": "Column widths",
                     "name": "groesse",
                     "type": "clone",
                     "instructions": "",
@@ -52,13 +52,15 @@
                         "class": "",
                         "id": ""
                     },
+                    "acfe_permissions": "",
                     "clone": [
                         "group_5e0a954b030dd"
                     ],
                     "display": "seamless",
                     "layout": "block",
                     "prefix_label": 0,
-                    "prefix_name": 0
+                    "prefix_name": 0,
+                    "acfe_clone_modal": 0
                 },
                 {
                     "key": "field_5e18c5073aa3f",
@@ -73,6 +75,19 @@
                         "class": "",
                         "id": ""
                     },
+                    "acfe_permissions": "",
+                    "acfe_flexible_stylised_button": 1,
+                    "acfe_flexible_layouts_thumbnails": 0,
+                    "acfe_flexible_layouts_templates": 0,
+                    "acfe_flexible_layouts_placeholder": 0,
+                    "acfe_flexible_close_button": 0,
+                    "acfe_flexible_title_edition": 0,
+                    "acfe_flexible_copy_paste": 1,
+                    "acfe_flexible_modal_edition": 0,
+                    "acfe_flexible_modal": {
+                        "acfe_flexible_modal_enabled": "0"
+                    },
+                    "acfe_flexible_layouts_state": "collapse",
                     "layouts": {
                         "layout_5e18cc653e6c4": {
                             "key": "layout_5e18cc653e6c4",
@@ -102,7 +117,8 @@
                                 }
                             ],
                             "min": "",
-                            "max": ""
+                            "max": "",
+                            "acfe_flexible_thumbnail": ""
                         },
                         "layout_5e18c514f0af7": {
                             "key": "layout_5e18c514f0af7",
@@ -131,7 +147,8 @@
                                 }
                             ],
                             "min": "",
-                            "max": ""
+                            "max": "",
+                            "acfe_flexible_thumbnail": ""
                         },
                         "layout_5e18c5283aa41": {
                             "key": "layout_5e18c5283aa41",
@@ -160,7 +177,8 @@
                                 }
                             ],
                             "min": "",
-                            "max": ""
+                            "max": "",
+                            "acfe_flexible_thumbnail": ""
                         },
                         "layout_5e18cc553e6c2": {
                             "key": "layout_5e18cc553e6c2",
@@ -189,7 +207,8 @@
                                 }
                             ],
                             "min": "",
-                            "max": ""
+                            "max": "",
+                            "acfe_flexible_thumbnail": ""
                         },
                         "layout_5e19bd0bfff12": {
                             "key": "layout_5e19bd0bfff12",
@@ -271,7 +290,36 @@
                                 }
                             ],
                             "min": "",
-                            "max": ""
+                            "max": "",
+                            "acfe_flexible_thumbnail": ""
+                        },
+                        "layout_5e28a4e29a443": {
+                            "key": "layout_5e28a4e29a443",
+                            "name": "yt_video",
+                            "label": "YT Video",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e28a4ec9a444",
+                                    "label": "URL",
+                                    "name": "url",
+                                    "type": "oembed",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "width": "",
+                                    "height": ""
+                                }
+                            ],
+                            "min": "",
+                            "max": "",
+                            "acfe_flexible_thumbnail": ""
                         },
                         "layout_5e18f406f5e28": {
                             "key": "layout_5e18f406f5e28",
@@ -308,11 +356,13 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "acfe_permissions": "",
+                                    "acfe_repeater_stylised_button": 0,
                                     "collapsed": "",
                                     "min": 0,
                                     "max": 0,
                                     "layout": "table",
-                                    "button_label": "",
+                                    "button_label": "Button",
                                     "sub_fields": [
                                         {
                                             "key": "field_5e18f426f5e2a",
@@ -398,7 +448,8 @@
                                 }
                             ],
                             "min": "",
-                            "max": ""
+                            "max": "",
+                            "acfe_flexible_thumbnail": ""
                         },
                         "layout_5e1a68316b9b0": {
                             "key": "layout_5e1a68316b9b0",
@@ -449,7 +500,8 @@
                                 }
                             ],
                             "min": "",
-                            "max": ""
+                            "max": "",
+                            "acfe_flexible_thumbnail": ""
                         },
                         "layout_5e233b710f94b": {
                             "key": "layout_5e233b710f94b",
@@ -470,11 +522,13 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "acfe_permissions": "",
+                                    "acfe_repeater_stylised_button": 0,
                                     "collapsed": "",
                                     "min": 0,
                                     "max": 0,
                                     "layout": "table",
-                                    "button_label": "",
+                                    "button_label": "Bild",
                                     "sub_fields": [
                                         {
                                             "key": "field_5e233b8b0f94d",
@@ -525,7 +579,8 @@
                                 }
                             ],
                             "min": "",
-                            "max": ""
+                            "max": "",
+                            "acfe_flexible_thumbnail": ""
                         },
                         "layout_5e234f5780445": {
                             "key": "layout_5e234f5780445",
@@ -552,7 +607,8 @@
                                 }
                             ],
                             "min": "",
-                            "max": ""
+                            "max": "",
+                            "acfe_flexible_thumbnail": ""
                         }
                     },
                     "button_label": "Inhalte",
@@ -595,6 +651,29 @@
                     "layout": "block",
                     "prefix_label": 0,
                     "prefix_name": 0
+                },
+                {
+                    "key": "field_5e28b4b0ee9ec",
+                    "label": "Height",
+                    "name": "mrrc_height",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "clone": [
+                        "group_5e28b44e78c16"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0,
+                    "acfe_clone_modal": 0
                 },
                 {
                     "key": "field_5e247665038fb",
@@ -661,5 +740,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1579559160
+    "modified": 1579733720
 }

@@ -221,6 +221,22 @@
                 padding: $l;
             }
 
+            &.paddingXY_zero {
+                padding: 0;
+            }
+            &.paddingXY_small {
+                padding: $l;
+            }
+            &.paddingXY_medium {
+                padding: $xl;
+            }
+            &.paddingXY_big {
+                padding: $xxl;
+            }
+            &.paddingXY_verybig {
+                padding: $xxxl;
+            }
+
             .col_inner_bgimg {
                 position: absolute;
                 top: 0;

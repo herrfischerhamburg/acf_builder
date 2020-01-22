@@ -33,31 +33,6 @@
             "default_value": ""
         },
         {
-            "key": "field_5e276c7a4e707",
-            "label": "Columns height",
-            "name": "col_sh",
-            "type": "radio",
-            "instructions": "Height of columns.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "choices": {
-                "auto": "Auto",
-                "100%": "100% (same height as highest sibling in row)"
-            },
-            "allow_null": 0,
-            "other_choice": 0,
-            "default_value": "",
-            "layout": "vertical",
-            "return_format": "value",
-            "save_other_choice": 0
-        },
-        {
             "key": "field_5e1a0ccf2294a",
             "label": "Text Ausrichtung",
             "name": "col_text_align",
@@ -108,5 +83,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1579642113
+    "modified": 1579726188
 }

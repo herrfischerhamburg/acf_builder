@@ -50,6 +50,19 @@
                         "class": "",
                         "id": ""
                     },
+                    "acfe_permissions": "",
+                    "acfe_flexible_stylised_button": 1,
+                    "acfe_flexible_layouts_thumbnails": 0,
+                    "acfe_flexible_layouts_templates": 0,
+                    "acfe_flexible_layouts_placeholder": 0,
+                    "acfe_flexible_close_button": 0,
+                    "acfe_flexible_title_edition": 0,
+                    "acfe_flexible_copy_paste": 1,
+                    "acfe_flexible_modal_edition": 0,
+                    "acfe_flexible_modal": {
+                        "acfe_flexible_modal_enabled": "0"
+                    },
+                    "acfe_flexible_layouts_state": "collapse",
                     "layouts": {
                         "layout_5e18cc653e6c4": {
                             "key": "layout_5e18cc653e6c4",
@@ -310,11 +323,13 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "acfe_permissions": "",
+                                    "acfe_repeater_stylised_button": 0,
                                     "collapsed": "",
                                     "min": 0,
                                     "max": 0,
                                     "layout": "table",
-                                    "button_label": "",
+                                    "button_label": "Button",
                                     "sub_fields": [
                                         {
                                             "key": "field_5e226530ca1e2",
@@ -488,11 +503,13 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "acfe_permissions": "",
+                                    "acfe_repeater_stylised_button": 0,
                                     "collapsed": "",
                                     "min": 0,
                                     "max": 0,
                                     "layout": "table",
-                                    "button_label": "",
+                                    "button_label": "Image",
                                     "sub_fields": [
                                         {
                                             "key": "field_5e232763dbcce",
@@ -659,6 +676,48 @@
                     "max": ""
                 },
                 {
+                    "key": "field_5e24a35334969",
+                    "label": "Device related paddings",
+                    "name": "mrfc_paddings",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_5e249ffb08f16"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                },
+                {
+                    "key": "field_5e226530d148d",
+                    "label": "Column widths",
+                    "name": "groesse",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_5e0a954b030dd"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                },
+                {
                     "key": "field_5e226530d08fd",
                     "label": "Options",
                     "name": "",
@@ -689,48 +748,6 @@
                     },
                     "clone": [
                         "group_5e2321b5c4878"
-                    ],
-                    "display": "seamless",
-                    "layout": "block",
-                    "prefix_label": 0,
-                    "prefix_name": 0
-                },
-                {
-                    "key": "field_5e226530d148d",
-                    "label": "Column widths",
-                    "name": "groesse",
-                    "type": "clone",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "clone": [
-                        "group_5e0a954b030dd"
-                    ],
-                    "display": "seamless",
-                    "layout": "block",
-                    "prefix_label": 0,
-                    "prefix_name": 0
-                },
-                {
-                    "key": "field_5e24a35334969",
-                    "label": "Device related paddings",
-                    "name": "mrfc_paddings",
-                    "type": "clone",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "clone": [
-                        "group_5e249ffb08f16"
                     ],
                     "display": "seamless",
                     "layout": "block",
@@ -779,7 +796,7 @@
                 },
                 {
                     "key": "field_5e22828ee6625",
-                    "label": "Volle Deckkraft",
+                    "label": "Full opacity",
                     "name": "rfc_col_bgimg_fo",
                     "type": "true_false",
                     "instructions": "",
@@ -790,6 +807,7 @@
                         "class": "",
                         "id": ""
                     },
+                    "acfe_permissions": "",
                     "message": "Voll Deckkraft",
                     "default_value": 0,
                     "ui": 0,
@@ -853,5 +871,13 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579475388
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1579733715
 }

@@ -164,6 +164,7 @@
                         <?php $paddingY_sm = get_sub_field('mdodrh_sm'); ?>
                         <?php $paddingY_md = get_sub_field('mdodrh_md'); ?>
                         <?php $paddingY_lg = get_sub_field('mdodrh_lg'); ?>
+                        <?php $paddingXY = get_sub_field('mdodrh_yx'); ?>
 
                         <?php
                             // ACF image
@@ -202,8 +203,9 @@
                             <?php echo 'paddingY_sm_'.$paddingY_sm; ?>
                             <?php echo 'paddingY_md_'.$paddingY_md; ?>
                             <?php echo 'paddingY_lg_'.$paddingY_lg; ?>
+                            <?php echo 'paddingXY_'.$paddingXY; ?>
                             " 
-                            style="background-color: <?php echo $columnbgcolor; ?>">
+                            style="background-color: <?php echo $columnbgcolor; ?>;">
                                 
                                 <div class="
                                 col_inner_bgimg

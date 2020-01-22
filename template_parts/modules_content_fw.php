@@ -1,4 +1,3 @@
-
 <style>
     .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .columncolor {
         color: <?php echo $columncolor; ?>
@@ -82,6 +81,19 @@ elseif( get_row_layout() == 'bild' ): ?>
 
 <?php // Buttons
 elseif( get_row_layout() == 'buttons' ): ?>
+    <style>
+        <?php if ( get_sub_field('button_bgcolor') ) : ?>
+        .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .button  {
+            background-color: <?php echo get_sub_field('button_bgcolor'); ?> !important;
+        }
+        <?php endif; ?>
+
+        <?php if ( get_sub_field('button_color') ) : ?>
+        .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .button {
+            color: <?php echo get_sub_field('button_color'); ?> !important;
+        }
+        <?php endif; ?>
+    </style>
     <?php if ( get_sub_field('button_fw') ) : ?>
         <?php $button_fw = '1'; ?>
     <?php else : ?>

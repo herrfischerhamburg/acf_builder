@@ -100,6 +100,15 @@
                     </div>
 
 
+                <?php // YT video
+                elseif( get_row_layout() == 'yt_video' ): ?>
+                    <div class="flex_inner flex_ytvideo">
+                        <?php if ( get_sub_field('url') ) : ?>
+                            <?php echo get_sub_field('url'); ?>
+                        <?php endif; ?>
+                    </div>
+
+
                 <?php // Benefits
                 elseif( get_row_layout() == 'benefits' ): ?>
                     <div class="flex_inner flex_benefits">
