@@ -32,6 +32,11 @@
     padding-top: $l;
     padding-bottom: $l;
 
+    &.wrapper_subpage {
+        padding-top: $s;
+        padding-bottom: $s;
+    }
+
     .row {
         &.r_double_bottom_margin {
             margin-bottom: $m;

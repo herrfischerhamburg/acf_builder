@@ -5,13 +5,14 @@
     get_header();
 ?>
 
-<section class="wrapper normal">
+<section class="wrapper">
 	<div class="container">
+
 		<div class="row">
-			<div class="spaces_asusual __ col-md-12">				
-				<!-- <h1 class="entry">
-                    <?php the_title(); ?>
-                </h1> -->
+			<div class="spaces_asusual col-12">				
+				<h1>
+					<?php the_title(); ?>
+				</h1>
 
 				<?php
 					$args = array(
