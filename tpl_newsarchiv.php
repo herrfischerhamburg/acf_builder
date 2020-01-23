@@ -9,7 +9,7 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="spaces_asusual col-12">				
+			<div class="col-12">				
 				<h1>
 					<?php the_title(); ?>
 				</h1>
@@ -56,7 +56,10 @@
 
                                 <?php the_excerpt(); ?>
 
-                                <a href="<?php the_permalink(); ?>" class="button">Zum Artikel</a>
+								<a href="<?php the_permalink(); ?>" class="button">
+									Zum Artikel
+									<span class="genericons-neue genericons-neue-next"></span> 
+								</a>
 							</article>
 
 						<?php endwhile; ?>                  
