@@ -84,24 +84,24 @@ elseif( get_row_layout() == 'bild' ): ?>
 <?php // Buttons
 elseif( get_row_layout() == 'buttons' ): ?>
     <style>
-        <?php if ( get_sub_field('button_bgcolor') ) : ?>
+        <?php if ( get_sub_field('mrceole_bgcolor') ) : ?>
             .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .button  {
-                background-color: <?php echo get_sub_field('button_bgcolor'); ?> !important;
+                background-color: <?php echo get_sub_field('mrceole_bgcolor'); ?> !important;
             }
         <?php endif; ?>
-
-        <?php if ( get_sub_field('button_color') ) : ?>
+        <?php if ( get_sub_field('mrceole_color') ) : ?>
             .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .button {
-                color: <?php echo get_sub_field('button_color'); ?> !important;
+                color: <?php echo get_sub_field('mrceole_color'); ?> !important;
+            }
+        <?php endif; ?>
+        <?php if ( get_sub_field('mrceole_width') ) : ?>
+            .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .button {
+                width: <?php echo get_sub_field('mrceole_width'); ?>;
             }
         <?php endif; ?>
     </style>
 
-    <?php if ( get_sub_field('button_fw') ) : ?>
-        <?php $button_fw = '1'; ?>
-    <?php else : ?>
-        <?php $button_fw = '0'; ?>
-    <?php endif; ?>
+    <?php $element_width = get_sub_field('mrceole_width'); ?>
 
     <div class="flex_inner <?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?>">
     <?php if ( have_rows('buttons') ) : ?>
@@ -116,7 +116,7 @@ elseif( get_row_layout() == 'buttons' ): ?>
                 $link_target = $link['target'] ? $link['target'] : '_self';
                 ?>
                 <a class="
-                <?php if ($button_fw == '1') { echo 'button_fw'; } ?>
+                <?php if ($element_width == '100%') { echo 'button_fullwidth'; } ?>
                     button 
                     child_topmargin_xxs
                     <?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?>  
@@ -133,16 +133,71 @@ elseif( get_row_layout() == 'buttons' ): ?>
     </div>
 
 
+<?php // Downloads
+elseif( get_row_layout() == 'downloads' ): ?>
+    <style>
+        <?php if ( get_sub_field('mrceole_bgcolor') ) : ?>
+            .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .download  {
+                background-color: <?php echo get_sub_field('mrceole_bgcolor'); ?> !important;
+            }
+        <?php endif; ?>
+        <?php if ( get_sub_field('mrceole_color') ) : ?>
+            .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .download {
+                color: <?php echo get_sub_field('mrceole_color'); ?> !important;
+            }
+        <?php endif; ?>
+        <?php if ( get_sub_field('mrceole_width') ) : ?>
+            .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .download {
+                width: <?php echo get_sub_field('mrceole_width'); ?>;
+            }
+        <?php endif; ?>
+    </style>
+
+    <?php $element_width = get_sub_field('mrceole_width'); ?>
+
+    <div class="flex_inner">
+    <?php if ( have_rows('download') ) : ?>
+        <div class="flex_inner_element flex_downloads children_topmargin_xxs">
+        <?php while( have_rows('download') ) : the_row(); ?>
+            <?php if ( get_sub_field('file') ) : $file = get_sub_field('file'); ?>
+                <a href="<?php echo $file['url']; ?>" class="download button child_topmargin_xxs">
+                    <span class="genericons-neue genericons-neue-attachment"></span> 
+                    <?php echo $file['title']; ?>
+                </a>
+            <?php endif; ?>
+        <?php endwhile; ?>
+        </div>
+    <?php endif; ?>
+    </div>
+
+
 <?php // Slider
 elseif( get_row_layout() == 'slider' ): ?>
     <?php $height_xs = get_sub_field('mcodryh_xs'); ?>
     <?php $height_sm = get_sub_field('mcodryh_sm'); ?>
     <?php $height_md = get_sub_field('mcodryh_md'); ?>
-    <?php $height_lg = get_sub_field('mcodryh_lg'); ?>   
+    <?php $height_lg = get_sub_field('mcodryh_lg'); ?>    
 
     <div class="flex_inner <?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?>">
-    <?php if ( have_rows('images') ) : ?>
-        <div class="flex_inner_element">
+
+        
+    <div class="flex_inner_element flex_slider">
+        <?php if ( get_sub_field('title') || get_sub_field('subline') ) : ?>
+            <div class="wrap_slider_text">
+                <div class="wrap_slider_text_inner">
+                    <h3>
+                        <?php echo get_sub_field('title'); ?>
+                    </h3>
+                </div>
+                <?php if ( get_sub_field('subline') ) : ?>
+                    <p class="wrap_slider_text_subline">
+                        <?php echo get_sub_field('subline'); ?>
+                    </p>
+                <?php endif; ?>					
+            </div>
+        <?php endif; ?>
+
+        <?php if ( have_rows('images') ) : ?>        
             <div class="
                 slider_content
                 <?php echo 'height_xs_'.$height_xs; ?>
@@ -161,8 +216,8 @@ elseif( get_row_layout() == 'slider' ): ?>
                 </div>
                 <?php endwhile; ?>
             </div>
+        <?php endif; ?>
         </div>
-    <?php endif; ?>
     </div>
 
 

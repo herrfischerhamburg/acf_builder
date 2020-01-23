@@ -119,8 +119,10 @@ ul, ol {
 .button {
     span.genericons-neue {
         font-size: 140%;
-        margin-right: .2em;
+        margin-left: .2em;
         position: relative;
-        top: -.05em;
+        top: .07em;
+        right: -.2em;
+        float: right;
     }
 }

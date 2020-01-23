@@ -212,8 +212,8 @@
     .button {
         margin-right: $s;
 
-        &.button_fw {
-            width: 100%;
+        &.button_fullwidth {
+            margin-right: 0;
         }
     }
 }

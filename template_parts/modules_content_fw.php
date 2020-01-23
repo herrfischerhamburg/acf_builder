@@ -69,7 +69,6 @@ elseif( get_row_layout() == 'bild' ): ?>
     </style>
     <div class="flex_inner flex_bild <?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?>">
         <figure class="flex_inner_element" style="background-image: url('<?php echo $img[0] ?>')">
-            sss
             <?php if ( get_sub_field('img_subline') ) : ?>
                 <figcaption class="img_subline columncolor">
                     <?php echo get_sub_field('img_subline'); ?>
@@ -82,23 +81,24 @@ elseif( get_row_layout() == 'bild' ): ?>
 <?php // Buttons
 elseif( get_row_layout() == 'buttons' ): ?>
     <style>
-        <?php if ( get_sub_field('button_bgcolor') ) : ?>
-        .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .button  {
-            background-color: <?php echo get_sub_field('button_bgcolor'); ?> !important;
-        }
+        <?php if ( get_sub_field('mrceole_bgcolor') ) : ?>
+            .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .button  {
+                background-color: <?php echo get_sub_field('mrceole_bgcolor'); ?> !important;
+            }
         <?php endif; ?>
-
-        <?php if ( get_sub_field('button_color') ) : ?>
-        .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .button {
-            color: <?php echo get_sub_field('button_color'); ?> !important;
-        }
+        <?php if ( get_sub_field('mrceole_color') ) : ?>
+            .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .button {
+                color: <?php echo get_sub_field('mrceole_color'); ?> !important;
+            }
+        <?php endif; ?>
+        <?php if ( get_sub_field('mrceole_width') ) : ?>
+            .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .button {
+                width: <?php echo get_sub_field('mrceole_width'); ?>;
+            }
         <?php endif; ?>
     </style>
-    <?php if ( get_sub_field('button_fw') ) : ?>
-        <?php $button_fw = '1'; ?>
-    <?php else : ?>
-        <?php $button_fw = '0'; ?>
-    <?php endif; ?>
+
+    <?php $element_width = get_sub_field('mrceole_width'); ?>
 
     <div class="flex_inner <?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?>">
     <?php if ( have_rows('buttons') ) : ?>
@@ -113,7 +113,7 @@ elseif( get_row_layout() == 'buttons' ): ?>
                 $link_target = $link['target'] ? $link['target'] : '_self';
                 ?>
                 <a class="
-                <?php if ($button_fw == '1') { echo 'button_fw'; } ?>
+                <?php if ($element_width == '100%') { echo 'button_fullwidth'; } ?>
                     button 
                     child_topmargin_xxs
                     <?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?>  
@@ -124,6 +124,44 @@ elseif( get_row_layout() == 'buttons' ): ?>
                 </a>
             <?php endif; ?>
 
+        <?php endwhile; ?>
+        </div>
+    <?php endif; ?>
+    </div>
+
+
+<?php // Downloads
+elseif( get_row_layout() == 'downloads' ): ?>
+    <style>
+        <?php if ( get_sub_field('mrceole_bgcolor') ) : ?>
+            .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .download  {
+                background-color: <?php echo get_sub_field('mrceole_bgcolor'); ?> !important;
+            }
+        <?php endif; ?>
+        <?php if ( get_sub_field('mrceole_color') ) : ?>
+            .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .download {
+                color: <?php echo get_sub_field('mrceole_color'); ?> !important;
+            }
+        <?php endif; ?>
+        <?php if ( get_sub_field('mrceole_width') ) : ?>
+            .<?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?> .download {
+                width: <?php echo get_sub_field('mrceole_width'); ?>;
+            }
+        <?php endif; ?>
+    </style>
+
+    <?php $element_width = get_sub_field('mrceole_width'); ?>
+
+    <div class="flex_inner">
+    <?php if ( have_rows('download') ) : ?>
+        <div class="flex_inner_element flex_downloads children_topmargin_xxs">
+        <?php while( have_rows('download') ) : the_row(); ?>
+            <?php if ( get_sub_field('file') ) : $file = get_sub_field('file'); ?>
+                <a href="<?php echo $file['url']; ?>" class="download download button child_topmargin_xxs">
+                    <span class="genericons-neue genericons-neue-attachment"></span> 
+                    <?php echo $file['title']; ?>
+                </a>
+            <?php endif; ?>
         <?php endwhile; ?>
         </div>
     <?php endif; ?>

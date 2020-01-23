@@ -351,7 +351,7 @@
                                 },
                                 {
                                     "key": "field_5e226530cb849",
-                                    "label": "Button Optionen",
+                                    "label": "Button Options",
                                     "name": "",
                                     "type": "tab",
                                     "instructions": "",
@@ -362,14 +362,15 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "acfe_permissions": "",
                                     "placement": "top",
                                     "endpoint": 0
                                 },
                                 {
-                                    "key": "field_5e226530cc338",
-                                    "label": "Hintergrundfarbe",
-                                    "name": "button_bgcolor",
-                                    "type": "color_picker",
+                                    "key": "field_5e2a0cec5742f",
+                                    "label": "Options",
+                                    "name": "options",
+                                    "type": "clone",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -378,13 +379,48 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": ""
+                                    "acfe_permissions": "",
+                                    "clone": [
+                                        "group_5e2a019c8b49b"
+                                    ],
+                                    "display": "seamless",
+                                    "layout": "block",
+                                    "prefix_label": 0,
+                                    "prefix_name": 0,
+                                    "acfe_clone_modal": 0
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        "layout_5e2a0d3657430": {
+                            "key": "layout_5e2a0d3657430",
+                            "name": "downloads",
+                            "label": "Download(s)",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e2a0d4157431",
+                                    "label": "Content",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "placement": "top",
+                                    "endpoint": 0
                                 },
                                 {
-                                    "key": "field_5e226530ccf4c",
-                                    "label": "Button Textfarbe",
-                                    "name": "button_color",
-                                    "type": "color_picker",
+                                    "key": "field_5e2a0d5257432",
+                                    "label": "Download",
+                                    "name": "download",
+                                    "type": "repeater",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -393,13 +429,42 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": ""
+                                    "acfe_permissions": "",
+                                    "acfe_repeater_stylised_button": 0,
+                                    "collapsed": "",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "table",
+                                    "button_label": "File",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5e2a0d6857433",
+                                            "label": "File",
+                                            "name": "file",
+                                            "type": "file",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_permissions": "",
+                                            "acfe_uploader": "wp",
+                                            "return_format": "array",
+                                            "library": "all",
+                                            "min_size": "",
+                                            "max_size": "",
+                                            "mime_types": ""
+                                        }
+                                    ]
                                 },
                                 {
-                                    "key": "field_5e226530cda7b",
-                                    "label": "Volle Breite",
-                                    "name": "button_fw",
-                                    "type": "true_false",
+                                    "key": "field_5e2a0d9b57434",
+                                    "label": "Download Options",
+                                    "name": "",
+                                    "type": "tab",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -408,11 +473,32 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "message": "Volle Breite",
-                                    "default_value": 0,
-                                    "ui": 0,
-                                    "ui_on_text": "",
-                                    "ui_off_text": ""
+                                    "acfe_permissions": "",
+                                    "placement": "top",
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_5e2a0db757435",
+                                    "label": "Options",
+                                    "name": "dl_options",
+                                    "type": "clone",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "clone": [
+                                        "group_5e2a019c8b49b"
+                                    ],
+                                    "display": "seamless",
+                                    "layout": "block",
+                                    "prefix_label": 0,
+                                    "prefix_name": 0,
+                                    "acfe_clone_modal": 0
                                 }
                             ],
                             "min": "",
@@ -757,34 +843,10 @@
                     "prefix_name": 0
                 },
                 {
-                    "key": "field_5e227bbf331f0",
-                    "label": "Background Image",
-                    "name": "rfc_col_bgimg",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "id",
-                    "preview_size": "square-xxs",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_5e22828ee6625",
-                    "label": "Full opacity",
-                    "name": "rfc_col_bgimg_fo",
-                    "type": "true_false",
+                    "key": "field_5e2a125f5801b",
+                    "label": "Background image",
+                    "name": "o_bgimg",
+                    "type": "clone",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -794,11 +856,14 @@
                         "id": ""
                     },
                     "acfe_permissions": "",
-                    "message": "Voll Deckkraft",
-                    "default_value": 0,
-                    "ui": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
+                    "clone": [
+                        "group_5e2a114aab7a1"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0,
+                    "acfe_clone_modal": 0
                 },
                 {
                     "key": "field_5e2472e878875",
@@ -865,5 +930,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1579734408
+    "modified": 1579818282
 }

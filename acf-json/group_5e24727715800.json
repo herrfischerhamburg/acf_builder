@@ -1,6 +1,6 @@
 {
     "key": "group_5e24727715800",
-    "title": "Modules - Columns - Options (Special)",
+    "title": "Modules - Row - Column - Options (Special)",
     "fields": [
         {
             "key": "field_5e24728c27bbd",
@@ -39,5 +39,13 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1579465913
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1579813527
 }

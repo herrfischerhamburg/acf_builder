@@ -130,10 +130,10 @@
                 <?php // Downloads
                 elseif( get_row_layout() == 'downloads' ): ?>
                     <div class="flex_inner">
-                    <?php if ( have_rows('downloads') ) : ?>
-                        <div class="downloads children_topmargin_s">
-                        <?php while( have_rows('downloads') ) : the_row(); ?>
-                            <?php if ( get_sub_field('download') ) : $file = get_sub_field('download'); ?>
+                    <?php if ( have_rows('download') ) : ?>
+                        <div class="downloads">
+                        <?php while( have_rows('download') ) : the_row(); ?>
+                            <?php if ( get_sub_field('file') ) : $file = get_sub_field('file'); ?>
                                 <a href="<?php echo $file['url']; ?>" class="button download child_topmargin_s">
                                     <span class="icon_left icon icon-document2"></span> 
                                     <?php echo $file['title']; ?>

@@ -13,14 +13,16 @@
 
         <?php
             // ACF image
-            if ( get_sub_field('w_bgimg') ) : 
-                $image = get_sub_field( 'w_bgimg' );
+            if ( get_sub_field('mdo_bgimg') ) : 
+                $image = get_sub_field( 'mdo_bgimg' );
                 $size = 'full';
                 $img = wp_get_attachment_image_src( $image, $size );
             else :
                 $image = 0;
             endif;
-        ?>   
+        ?>
+
+        <?php $mdo_bgimg_opacity = get_sub_field('mdo_bgimg_opacity'); ?>
         
         <section class="
             wrapper
@@ -34,9 +36,9 @@
         >
 
         <div 
-            class="w_bgimg"
+            class="mdo_bgimg"
             <?php if ( !empty($image)) { ?>
-                style="background-image: url('<?php echo $img[0] ?>');"
+                style="background-image: url('<?php echo $img[0] ?>'); opacity: <?php echo $mdo_bgimg_opacity; ?>;"
             <?php } ?>
         >
         </div>
@@ -168,15 +170,15 @@
 
                         <?php
                             // ACF image
-                            if ( get_sub_field('rfc_col_bgimg') ) : 
-                                $image = get_sub_field( 'rfc_col_bgimg' );
+                            if ( get_sub_field('mdo_bgimg') ) : 
+                                $image = get_sub_field( 'mdo_bgimg' );
                                 $size = 'full';
                                 $img = wp_get_attachment_image_src( $image, $size );
                             else :
                                 $image = 0;
                             endif;
                         ?>
-                        <?php $rfc_col_bgimg_fo = get_sub_field('rfc_col_bgimg_fo'); ?>
+                        <?php $mdo_bgimg_opacity = get_sub_field('mdo_bgimg_opacity'); ?>
                         
                         <?php if ( have_rows( 'column' ) ): ?>
 
@@ -207,13 +209,9 @@
                             " 
                             style="background-color: <?php echo $columnbgcolor; ?>;">
                                 
-                                <div class="
-                                col_inner_bgimg
-                                <?php if ($rfc_col_bgimg_fo != '0') { echo "row_fw_col_bgimg_o1"; } ?> 
-                                "
-                                
+                                <div class="col_inner_bgimg"                                
                                 <?php if ( !empty($image)) { ?>
-                                    style="background-image: url('<?php echo $img[0] ?>');"
+                                    style="background-image: url('<?php echo $img[0] ?>'); opacity: <?php echo $mdo_bgimg_opacity; ?>;"
                                 <?php } ?>
                                 ></div>
                                 <div class="col_inner_bgcolor_content">
