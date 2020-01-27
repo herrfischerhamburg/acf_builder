@@ -122,7 +122,7 @@ elseif( get_row_layout() == 'buttons' ): ?>
                     <?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?>  
                 " 
                 href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
-                    <span class="genericons-neue genericons-neue-next"></span> 
+                    <span class="smpl-arrow_right"></span> 
                     <?php echo esc_html( $link_title ); ?>
                 </a>
             <?php endif; ?>
@@ -161,7 +161,7 @@ elseif( get_row_layout() == 'downloads' ): ?>
         <?php while( have_rows('download') ) : the_row(); ?>
             <?php if ( get_sub_field('file') ) : $file = get_sub_field('file'); ?>
                 <a href="<?php echo $file['url']; ?>" class="download button child_topmargin_xxs">
-                    <span class="genericons-neue genericons-neue-attachment"></span> 
+                    <span class="smpl-download"></span> 
                     <?php echo $file['title']; ?>
                 </a>
             <?php endif; ?>
