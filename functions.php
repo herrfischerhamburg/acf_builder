@@ -82,7 +82,7 @@ function acfpb_scripts() {
 	wp_enqueue_style('acfpb_style_bootstrap-reboot', get_template_directory_uri() . '/bootstrap/css/bootstrap-reboot.min.css', array(), '1.0', 'all');
 	wp_enqueue_style('acfpb_style_vendors_slick', get_template_directory_uri() . '/inc/slick/slick.css', array(), '1.0', 'all');
 	wp_enqueue_style('acfpb_style_vendors_genericons', get_template_directory_uri() . '/inc/icons/genericons/Genericons-Neue.min.css', array(), '1.0', 'all');
-	wp_enqueue_style('acfpb_style_smpl', get_template_directory_uri() . '/inc/icons/smpl-v1.0/style.css', array(), '1.0', 'all');
+	wp_enqueue_style('acfpb_style_smpl', get_template_directory_uri() . '/inc/icons/smpl/style.css', array(), '1.0', 'all');
 	wp_enqueue_style('acfpb_style_aos', get_template_directory_uri() . '/inc/aos/aos.css', array(), '1.0', 'all');
 	
 	// Custom
