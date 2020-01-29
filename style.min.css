@@ -164,6 +164,7 @@ a.link_ghost,a:link.link_ghost,a:focus.link_ghost,a:active.link_ghost,a:visited.
 .txt a,.txt a:link,.txt a:focus,.txt a:active,.txt a:visited,.links a,.links a:link,.links a:focus,.links a:active,.links a:visited{color:#0074d9;text-decoration:none;position:relative;border-bottom:1px solid}
 .txt a:hover,.links a:hover{border-bottom:1px solid}
 a.button,.button{background-color:#0074d9;color:#fff;font-weight:700;font-size:80%;letter-spacing:.1em;text-transform:uppercase;padding:10px 15px;display:inline-block;border-radius:5px}
+a.button [class*="smpl-"],.button [class*="smpl-"]{position:relative;font-size:1.2em;top:.12em;margin-right:.3em}
 a.button.button_wide,.button.button_wide{width:100%}
 a.button.download,.button.download{padding-right:15px}
 a.button.download::after,.button.download::after{content:none}

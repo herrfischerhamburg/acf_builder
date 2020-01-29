@@ -8,7 +8,6 @@ a:visited {
     text-decoration: none;
     position: relative;
     opacity: 1;
-
     transition: opacity .3s;
 
     &:hover {
@@ -50,6 +49,13 @@ a.button,
     padding: $xs $s;
     display: inline-block;
     border-radius: $xxs;
+
+    [class*="smpl-"] {
+        position: relative;
+        font-size: 1.2em;
+        top: .12em;
+        margin-right: .3em;
+    }
 
     &.button_wide {
         width: 100%;
