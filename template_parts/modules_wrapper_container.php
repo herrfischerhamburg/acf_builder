@@ -20,7 +20,7 @@
             else :
                 $image = 0;
             endif;
-        ?>
+        ?>        
 
         <?php $mdo_bgimg_opacity = get_sub_field('mdo_bgimg_opacity'); ?>
         
@@ -29,10 +29,18 @@
             <?php if ($w_bgcolor == 'wrapper_nobgcolor') { ?>
                 wrapper_nobgcolor
             <?php } ?>
+
+            <?php if ( get_sub_field('w_class') ) : ?>
+                <?php echo get_sub_field('w_class'); ?>
+            <?php endif; ?>
             "
             <?php if ($w_bgcolor !== "wrapper_nobgcolor") { ?>
                 style="background-color: <?php echo $w_bgcolor; ?>";
             <?php } ?>
+
+            <?php if ( get_sub_field('w_id') ) : ?>
+                id="<?php echo get_sub_field('w_id'); ?>"
+            <?php endif; ?>
         >
 
         <div 

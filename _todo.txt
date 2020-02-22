@@ -1,2 +1,0 @@
-- rowindex classes to top
-- rows regular slider title

@@ -89,21 +89,21 @@ $(document).ready(function(){
 /**
  * Moby
  */
-$(document).ready(function(){
-	var mobyMenu = new Moby({
-		breakpoint		 : 1024,
-        enableEscape	 : true,
-        menu             : $('#main-nav'),
-        menuClass		 : 'left-side',
-        mobyTrigger		 : $("#moby-button"),
-        onClose          : false,
-        onOpen           : true,
-        overlay			 : true,
-        overlayClass 	 : 'dark',
-        subMenuOpenIcon  : '<span>&#x25BC;</span>',
-        subMenuCloseIcon : '<span>&#x25B2;</span>',
-        template         : '<div class="moby-wrap"><div class="moby-close"><span class="moby-close-icon"></span></div><div class="moby-menu"></div></div>'
-	});
+$(document).ready(function () {
+    var mobyMenu = new Moby({
+      breakpoint: 1024,
+      enableEscape: true,
+      menu: $('#main-nav'),
+      menuClass: 'right-side',
+      mobyTrigger: $("#moby-button"),
+      onClose: false,
+      onOpen: true,
+      overlay: true,
+      overlayClass: 'dark',
+      subMenuOpenIcon: '<span>&#x25BC;</span>',
+      subMenuCloseIcon: '<span>&#x25B2;</span>',
+      template: '<div class="moby-wrap"><div class="moby-close"><span class="moby-close-icon"></span></div><div class="moby-menu"></div></div>'
+    });
 });
 
 /**

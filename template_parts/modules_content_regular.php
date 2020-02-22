@@ -239,6 +239,43 @@ elseif( get_row_layout() == 'zitat' ): ?>
     </div>
 
 
+<?php // Google Map (API)
+    elseif( get_row_layout() == 'google_maps' ): ?>
+    <div class="flex_inner flex_google_map">
+        <?php if( have_rows('markers') ): ?>
+            <div class="acf-map" data-zoom="16">
+                <?php while ( have_rows('markers') ) : the_row(); 
+
+                    $mapmarker = get_template_directory_uri() . '/assets/img/marker.svg';
+
+                    // Load sub field values.
+                    $location = get_sub_field('marker');
+                    $title = get_sub_field('description');
+                    $description = get_sub_field('description');
+                    $image = $mapmarker;
+                ?>
+                
+                <div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>" data-icon="<?php echo $image; ?>">
+                    <div class="acf_map_content">
+                        <!-- <h3><?php echo esc_html( $title ); ?></h3> -->
+                        <p><?php echo esc_html( $location['address'] ); ?></p>
+                    </div>
+                </div>
+            <?php endwhile; ?>
+            </div>
+        <?php endif; ?>
+    </div>
+
+
+<?php // Google Map (iframe)
+    elseif( get_row_layout() == 'google_map_free' ): ?>
+    <div class="flex_inner flex_google_map">
+        <div class="acf-map_responsive">
+            <?php the_sub_field( 'iframe_code' ); ?>
+        </div>
+    </div>
+
+
 <?php // Divider
 elseif( get_row_layout() == 'divider' ): ?>
     <div class="flex_inner <?php echo 'gr_container'.$gr_container.'gr_row'.$gr_row.'gr_col'.$gr_col; ?>">

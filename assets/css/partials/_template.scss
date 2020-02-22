@@ -24,6 +24,12 @@
         background-size: cover;
         background-position: center;
     }
+
+    // More padding on smartphones
+    @include media-breakpoint-down(sm) {
+        padding-left: $s;
+        padding-right: $s;
+    }
 }
 
 // wrapper options
@@ -32,9 +38,19 @@
     padding-top: $l;
     padding-bottom: $l;
 
+    @include media-breakpoint-up(md) {
+        padding-top: $xxl;
+        padding-bottom: $xxl;
+    }
+
     &.wrapper_subpage {
         padding-top: $s;
         padding-bottom: $s;
+
+        @include media-breakpoint-up(md) {
+            padding-top: $xxl;
+            padding-bottom: $l;
+        }
     }
 
     .row {
@@ -90,7 +106,7 @@
 
 .flex_inner {
     // border: 1px solid tomato;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 
     &:last-of-type {
         margin-bottom: 0;

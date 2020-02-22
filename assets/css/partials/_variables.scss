@@ -1,7 +1,7 @@
 /* Colors */
 // theme
-$c1 		: #0074D9;
-$c2         : #7FDBFF;
+$c1 		: #111b3c;
+$c2         : #ef8520;
 $c3         : #39CCCC;
 $c4         : #FF4136;
 $ok         : #8914c9;
@@ -9,9 +9,11 @@ $ok         : #8914c9;
 // regular
 $w			: #ffffff;
 $b			: #111111;
-$g			: #aaaaaa;
-$g2			: #dddddd;
-$g3			: #b1b1b1;
+$g			: #efefef;
+$g2			: #cccccc;
+$g3			: #aaaaaa;
+
+$input_bg   : #111b3c;
 
 /* Spaces */
 // Margins
@@ -37,5 +39,9 @@ $hxxl: 800px;
 /* Typo */
 // Font family
 $f_regular: 'Lato', sans-serif;
-$f_hl: 'Lato', sans-serif;
+$f_hl: 'Meddon', sans-serif;
 $f_deko: 'Permanent Marker', cursive;
+
+// font-family: 'Meddon', ;
+// font-family: 'Zhi Mang Xing', ;
+// font-family: 'Mrs Sheppards', ;

@@ -1,3 +1,23 @@
 .main_header {
-    background-color: darken($color: $c1, $amount: 10);
+    background-color: $c1;
+    
+    @include media-breakpoint-down(md) {
+        height: 60px;
+        position: relative;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        background-color: transparent;
+    }
+
+    .menu_phone_mobile {
+        color: $w;
+        position: relative;
+        left: $s;
+        top: .75em;
+
+        a {
+            color: $w;
+        }
+    }
 }

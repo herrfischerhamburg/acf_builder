@@ -2,18 +2,28 @@
     padding-top: $m;
     padding-bottom: $m;
     font-size: 90%;
+    border-top: 1px solid $g2;
 
     @include media-breakpoint-down(sm) {
         text-align: center;
     }
 
-    .container {
+    .container-fluid {
         .row {
             > div {
+                font-size: 1.6rem;
+
                 .menu {
                     li {
                         list-style: none;
                         margin-left: 0;
+                        display: inline-block;
+                        margin-right: 1em;
+
+                        a {
+                            font-size: 1.6rem;
+                            color: $g3;
+                        }
                     }
 
                     @include media-breakpoint-up(md) {

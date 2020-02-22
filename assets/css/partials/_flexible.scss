@@ -248,6 +248,56 @@
     height: 100%;
 }
 
+// Google Maps
+.flex_google_map {
+    .acf-map {
+        height: 400px;
+
+        // Content map
+        .acf_map_content {
+            font-size: 1.4em;
+            font-weight: bold;
+            padding-left: .2em;
+            padding-right: 1em;
+
+            a {
+                font-weight: normal;
+            }
+
+            span {
+                position: relative;
+                background-color: $c1;
+                color: $w;
+                font-size: 1.5rem;
+                padding: .2em .5em;
+                border-radius: 5px;
+                display: inline-block;
+                top: -.1em;
+                margin-left: .4em;
+            }
+        }
+
+        .gm-style-iw {
+            button {
+                background-color: $g3 !important;
+                border-radius: 50%;
+                opacity: 1 !important;
+                top: 5px !important;
+                right: 5px !important;
+                width: 20px !important;
+                height: 20px !important;
+                background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 16 16' enable-background='new 0 0 16 16' xml:space='preserve'%3E%3Cpolygon fill='%23ffffff' points='12.7,4.7 11.3,3.3 8,6.6 4.7,3.3 3.3,4.7 6.6,8 3.3,11.3 4.7,12.7 8,9.4 11.3,12.7 12.7,11.3 9.4,8 '/%3E%3C/svg%3E%0A") !important;
+                background-size: 80% !important;
+                background-position: center !important;
+    
+                img {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
 // Editor
 .flex_editor {
     

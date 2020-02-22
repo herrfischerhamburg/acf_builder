@@ -27,23 +27,40 @@
 // Main Menu
 #main-nav {
 	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
 
 	.menu_phone {
 		position: absolute;
-		top: .7em;
+		top: 1.15em;
 		right: 1.3em;
 		color: $w;
+		font-size: .8em;
 	}
 
 	@include media-breakpoint-up(lg) {
-		@include shadow_a;
 		display: block;
 		text-align: left;
 		padding-left: $s;
 		padding-right: $s;
-		background-color: darken($color: $c1, $amount: 10);
+		background-color: $c1;
 		z-index: 1;
 		transition: all .3s;
+
+		:root .home & {
+			background-color: transparent;
+			
+			// .menu {
+			// 	border-bottom: 1px dashed rgba($color: $w, $alpha: .3);
+			// }
+		}
+	}
+
+	:root .unten & {
+		@include shadow_a;
+		background-color: $c1;
 	}
 
 	ul {
@@ -73,7 +90,7 @@
 		
 		a {
 			color: $w;
-			font-size: 90%;
+			font-size: .8em;
 			padding: 0 $s;
 			border-radius: 5px;
 			display: inline-block;
@@ -138,6 +155,34 @@
 				}
 			}
 		}
+	}
+}
+
+#main-nav {
+	#menu-item-1229,
+	#menu-item-1230,
+	#menu-item-1231 {
+		display: none;
+	}
+}
+
+body.home #main-nav {
+	#menu-item-1229,
+	#menu-item-1230,
+	#menu-item-1231 {
+		display: inline-block;
+	}
+}
+
+// #main-nav {
+// 	#menu-item-814 {
+// 		display: none;
+// 	}
+// }
+
+body.home #main-nav {
+	#menu-item-814 {
+		display: none;
 	}
 }
 
@@ -223,11 +268,12 @@
 		display: none;
 	}
 
-	position: relative;
+	position: absolute;
 	display: inline-block;
 	height: 59px;
 	width: 60px;
 	top: 0;
+	right: 0;
 	text-indent: -999px;
 	overflow: hidden;
 	cursor: pointer;
@@ -235,7 +281,7 @@
 	background-size: 50%;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-color: darken($color: $c1, $amount: 10);
+	background-color: $c1;
 }
 
 // Breaadcrumb

@@ -96,7 +96,7 @@ $(document).ready(function () {
     breakpoint: 1024,
     enableEscape: true,
     menu: $('#main-nav'),
-    menuClass: 'left-side',
+    menuClass: 'right-side',
     mobyTrigger: $("#moby-button"),
     onClose: false,
     onOpen: true,

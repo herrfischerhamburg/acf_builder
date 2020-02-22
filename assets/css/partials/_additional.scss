@@ -1,0 +1,19 @@
+.hello {
+    @include media-breakpoint-up(lg) {
+        padding-top: 185px;
+    }
+}
+
+#contact {
+    h3 {
+        margin-top: 2.5em;
+    }
+}
+
+.hello {
+    .mdo_bgimg {
+        @include media-breakpoint-up(lg) {
+            background-attachment: fixed;
+        }
+    }
+}

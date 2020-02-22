@@ -1,9 +1,9 @@
 <?php
 	// Options pages
 	if( function_exists('acf_add_options_page') ) {
-		acf_add_options_page("Template");	
-		acf_add_options_page("Texte");	
-		acf_add_options_page("Bilder");	
+		acf_add_options_page("Options");	
+		acf_add_options_page("Text");	
+		acf_add_options_page("Images");	
 	}
 
 	// Color fields
@@ -12,7 +12,7 @@
 			(function($) {
 				acf.add_filter('color_picker_args', function( args, $field ){
 					// add the hexadecimal codes here for the colors you want to appear as swatches
-					args.palettes = ['#0074D9', '#7FDBFF', '#39CCCC', '#FF4136', '#8914c9', '#111111', '#FFFFFF', '#AAAAAA', '#DDDDDD']
+					args.palettes = ['#111b3c', '#ef8520', '#111111', '#FFFFFF', '#aaaaaa', '#efefef']
 					// return colors
 					return args;
 				});

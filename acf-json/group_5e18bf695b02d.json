@@ -735,6 +735,89 @@
                             "min": "",
                             "max": ""
                         },
+                        "layout_5e504bd93fec8": {
+                            "key": "layout_5e504bd93fec8",
+                            "name": "google_maps",
+                            "label": "Google Map (API)",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e504be63fec9",
+                                    "label": "Markers",
+                                    "name": "markers",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "acfe_repeater_stylised_button": 0,
+                                    "collapsed": "",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "table",
+                                    "button_label": "Marker",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5e504bfd3feca",
+                                            "label": "Marker",
+                                            "name": "marker",
+                                            "type": "google_map",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "acfe_permissions": "",
+                                            "center_lat": "",
+                                            "center_lng": "",
+                                            "zoom": "",
+                                            "height": 200
+                                        }
+                                    ]
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        "layout_5e516f022e726": {
+                            "key": "layout_5e516f022e726",
+                            "name": "google_map_free",
+                            "label": "Google Map (free)",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e516f852e727",
+                                    "label": "iframe Code",
+                                    "name": "iframe_code",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 3,
+                                    "new_lines": "",
+                                    "acfe_textarea_code": 0
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
                         "layout_5e234f5780445": {
                             "key": "layout_5e234f5780445",
                             "name": "divider",
@@ -893,5 +976,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1579818250
+    "modified": 1582395315
 }

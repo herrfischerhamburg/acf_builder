@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<!-- <meta name="description" content="Die description steht in Google unter dem Titel - bitte anpassen und un-commenten" /> -->
+	<meta name="description" content="TANZSCHUHHAUS HAMBURG - Ihr Spezialist in Hamburg, traditionsreiches Geschäft in der Talstraße Nr. 17 in Hamburg St. Pauli. Hervorragende Qualität zu vernünftigen Preisen und Service. Wir zeigen Ihnen in unserem Geschäft die große Auswahl an Tanzschuhen in Hamburg. Bei uns finden Sie ausserdem Tanzschuhe in Übergrößen sowohl für Damen als auch für Herren." />
 	<meta name="page-topic" content="Dienstleistung">
 	<meta name="robots" content="index, follow" />
 	<meta name="revisit-after" content="7 days" />
@@ -13,7 +13,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,900|Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Meddon|Lato:400,900|Permanent+Marker&display=swap" rel="stylesheet">
 
 <?php wp_head(); ?>
 
@@ -22,6 +22,11 @@
 <body <?php body_class(); ?>>
 
 	<header class="main_header">
+
+		<div class="menu_phone_mobile __ d-lg-none">
+			<strong>Fon:</strong> 040 / 31 39 65
+		</div>
+		
 		<span id="moby-button">
 			<span>Menü</span>
 		</span>
@@ -39,8 +44,8 @@
 									'container' => 'ul',
 								)); 
 							?>
-							<div class="menu_phone">
-								<strong>Fon:</strong> 0151 XXXXXXXX
+							<div class="menu_phone d-none d-lg-block">
+								<strong>Fon:</strong> 040 / 31 39 65
 							</div>
 						</nav>
 					</div>
