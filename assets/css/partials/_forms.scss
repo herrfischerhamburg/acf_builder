@@ -32,9 +32,11 @@
     input:not([type="radio"]),
     select,
     textarea {
-        background-color: $input_bg;
-        color: $w;
+        @include shadow_a;
+        background-color: $w;
+        color: $c1;
         padding: .8em 1em;
+        border-radius: 5px;
     }
 
     input[type="submit"] {

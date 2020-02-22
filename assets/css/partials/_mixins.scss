@@ -40,7 +40,11 @@
  * Shadows
  */
 @mixin shadow_a {
-    box-shadow: 0 .2em .5em rgba($color: $b, $alpha: .3);
+    box-shadow: 0 .2em .3em rgba($color: $b, $alpha: .1);
+}
+
+@mixin shadow_b {
+    box-shadow: 0 .2em 1em rgba($color: $b, $alpha: .2);
 }
 
 /**

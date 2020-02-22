@@ -118,7 +118,7 @@ img[class*='wp-image-'].alignnone{float:none;display:block}
 .pagination_bottom .pagination-overview,.pagination_bottom .bslash{display:none}
 #main-nav{display:none;position:fixed;top:0;right:0;left:0}
 #main-nav .menu_phone{position:absolute;top:1.15em;right:1.3em;color:#fff;font-size:.8em}
-:root .unten #main-nav{-webkit-box-shadow:0 .2em .5em rgba(17,17,17,0.3);box-shadow:0 .2em .5em rgba(17,17,17,0.3);background-color:#111b3c}
+:root .unten #main-nav{-webkit-box-shadow:0 .2em .3em rgba(17,17,17,0.1);box-shadow:0 .2em .3em rgba(17,17,17,0.1);background-color:#111b3c}
 #main-nav ul{height:100%;margin-bottom:0;line-height:3em}
 #main-nav li{display:inline-block;line-height:3em;vertical-align:middle;text-transform:uppercase;letter-spacing:.06em}
 #main-nav li+li{margin-left:0;margin-top:0}
@@ -257,7 +257,7 @@ a.button.download::after,.button.download::after{content:none}
 .wpcf7-form{text-align:left;font-size:95%}
 .wpcf7-form input:not([type="checkbox"]),.wpcf7-form input:not([type="radio"]),.wpcf7-form label,.wpcf7-form textarea,.wpcf7-form select{width:100%;border:0;margin:0}
 .wpcf7-form input:not([type="checkbox"]),.wpcf7-form input:not([type="radio"]),.wpcf7-form textarea,.wpcf7-form select{font-size:95%}
-.wpcf7-form input:not([type="checkbox"]),.wpcf7-form input:not([type="radio"]),.wpcf7-form select,.wpcf7-form textarea{background-color:#111b3c;color:#fff;padding:.8em 1em}
+.wpcf7-form input:not([type="checkbox"]),.wpcf7-form input:not([type="radio"]),.wpcf7-form select,.wpcf7-form textarea{-webkit-box-shadow:0 .2em .3em rgba(17,17,17,0.1);box-shadow:0 .2em .3em rgba(17,17,17,0.1);background-color:#fff;color:#111b3c;padding:.8em 1em;border-radius:5px}
 .wpcf7-form input[type="submit"]{background-color:#111b3c;color:#fff;padding:10px}
 .wpcf7-form span.wpcf7-not-valid-tip{color:#ff4136;font-size:.9em;display:block}
 .wpcf7-form div.wpcf7-response-output{margin:20px 0 0 0;padding:10px 15px;border:2px solid #111b3c}
