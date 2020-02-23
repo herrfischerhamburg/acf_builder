@@ -17,3 +17,32 @@
         }
     }
 }
+
+// Main nav
+#main-nav {
+	#menu-item-1229,
+	#menu-item-1230,
+	#menu-item-1231 {
+		display: none;
+	}
+}
+
+body.home #main-nav {
+	#menu-item-1229,
+	#menu-item-1230,
+	#menu-item-1231 {
+		display: inline-block;
+	}
+}
+
+#main-nav {
+	#menu-item-1229 a {
+		padding-left: 0;
+	}
+}
+
+body.home #main-nav {
+	#menu-item-814 {
+		display: none;
+	}
+}

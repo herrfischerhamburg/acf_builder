@@ -340,12 +340,6 @@ img[class*='wp-image-'].alignnone { float: none; display: block; }
 
 #main-nav li.menu-item-has-children > a::after { content: ""; float: right; position: relative; top: .3em; left: -.5em; display: block; width: 20px; height: 20px; background-color: #ef8520; background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='13.4px' height='8.1px' viewBox='0 0 13.4 8.1' style='enable-background:new 0 0 13.4 8.1;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23212B5A;%7D%0A%3C/style%3E%3Cdefs%3E%3C/defs%3E%3Cpolygon class='st0' points='6.7,8.1 0,1.4 1.4,0 6.7,5.3 12,0 13.4,1.4 '/%3E%3C/svg%3E%0A"); background-repeat: no-repeat; background-position: center; background-size: 50%; border-radius: 50%; }
 
-#main-nav #menu-item-1229, #main-nav #menu-item-1230, #main-nav #menu-item-1231 { display: none; }
-
-body.home #main-nav #menu-item-1229, body.home #main-nav #menu-item-1230, body.home #main-nav #menu-item-1231 { display: inline-block; }
-
-body.home #main-nav #menu-item-814 { display: none; }
-
 .dropotron { background: #111b3c; border-radius: 0.2em; list-style: none; margin: 0; min-width: 10em; -webkit-box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.22); box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.22); }
 
 .dropotron > li { margin: 0; padding: 0; position: relative; }
@@ -648,6 +642,14 @@ a.button.download::after, .button.download::after { content: none; }
 
 @media (min-width: 992px) { .hello .mdo_bgimg { background-attachment: fixed; } }
 
+#main-nav #menu-item-1229, #main-nav #menu-item-1230, #main-nav #menu-item-1231 { display: none; }
+
+body.home #main-nav #menu-item-1229, body.home #main-nav #menu-item-1230, body.home #main-nav #menu-item-1231 { display: inline-block; }
+
+#main-nav #menu-item-1229 a { padding-left: 0; }
+
+body.home #main-nav #menu-item-814 { display: none; }
+
 /** Wrap checkboxes and radio buttons with lable ("use_label_element"): <p> Radio examples [radio radio-129 use_label_element default:1 "11" "22" "33"] </p> <p> Checkbox examples [checkbox checkbox-758 use_label_element "aa" "bb" "cc"] </p> */
 .wpcf7-form { text-align: left; font-size: 95%; }
 
@@ -669,7 +671,7 @@ a.button.download::after, .button.download::after { content: none; }
 
 .wpcf7 .submit_wrapper { position: relative; }
 
-.wpcf7 .submit_wrapper .ajax-loader { position: absolute; width: 100%; height: 100%; top: 0; left: 0; margin: 0; z-index: 1; background-color: #ef8520; background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20version%3D%221.1%22%20id%3D%22loader-1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%20%20%20%20%20width%3D%2240px%22%20height%3D%2240px%22%20viewBox%3D%220%200%2050%2050%22%20style%3D%22enable-background%3Anew%200%200%2050%2050%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%20%20%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M43.935%2C25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318%2C0-18.683%2C8.365-18.683%2C18.683h4.068c0-8.071%2C6.543-14.615%2C14.615-14.615c8.072%2C0%2C14.615%2C6.543%2C14.615%2C14.615H43.935z%22%3E%0A%20%20%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0A%20%20%20%20%20%20attributeName%3D%22transform%22%0A%20%20%20%20%20%20type%3D%22rotate%22%0A%20%20%20%20%20%20from%3D%220%2025%2025%22%0A%20%20%20%20%20%20to%3D%22360%2025%2025%22%0A%20%20%20%20%20%20dur%3D%220.6s%22%0A%20%20%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0A%20%20%20%20%3C%2Fpath%3E%0A%20%20%3C%2Fsvg%3E"); background-repeat: no-repeat; background-size: 40px; background-position: center; }
+.wpcf7 .submit_wrapper .ajax-loader { border-radius: 5px; position: absolute; width: 100%; height: 100%; top: 0; left: 0; margin: 0; z-index: 1; background-color: #ef8520; background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20version%3D%221.1%22%20id%3D%22loader-1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%20%20%20%20%20width%3D%2240px%22%20height%3D%2240px%22%20viewBox%3D%220%200%2050%2050%22%20style%3D%22enable-background%3Anew%200%200%2050%2050%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%20%20%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M43.935%2C25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318%2C0-18.683%2C8.365-18.683%2C18.683h4.068c0-8.071%2C6.543-14.615%2C14.615-14.615c8.072%2C0%2C14.615%2C6.543%2C14.615%2C14.615H43.935z%22%3E%0A%20%20%20%20%3CanimateTransform%20attributeType%3D%22xml%22%0A%20%20%20%20%20%20attributeName%3D%22transform%22%0A%20%20%20%20%20%20type%3D%22rotate%22%0A%20%20%20%20%20%20from%3D%220%2025%2025%22%0A%20%20%20%20%20%20to%3D%22360%2025%2025%22%0A%20%20%20%20%20%20dur%3D%220.6s%22%0A%20%20%20%20%20%20repeatCount%3D%22indefinite%22%2F%3E%0A%20%20%20%20%3C%2Fpath%3E%0A%20%20%3C%2Fsvg%3E"); background-repeat: no-repeat; background-size: 40px; background-position: center; }
 
 .wpcf7 .submit_wrapper .wpcf7-submit { margin: 0; height: auto; padding: 14px; }
 
