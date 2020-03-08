@@ -1,7 +1,20 @@
 .hello {
     @include media-breakpoint-up(lg) {
         padding-top: 185px;
-    }
+	}
+	
+	.gr_container1gr_row1gr_col1 {
+		img {
+			margin-left: auto;
+			margin-right: auto;
+
+			max-width: 330px;
+
+			@include media-breakpoint-up(sm) {
+				max-width: 400px;
+			}
+		}
+	}
 }
 
 #contact {
@@ -20,17 +33,13 @@
 
 // Main nav
 #main-nav {
-	#menu-item-1229,
-	#menu-item-1230,
-	#menu-item-1231 {
+	.homeonly {
 		display: none;
 	}
 }
 
 body.home #main-nav {
-	#menu-item-1229,
-	#menu-item-1230,
-	#menu-item-1231 {
+	.homeonly {
 		display: inline-block;
 	}
 }
@@ -45,4 +54,10 @@ body.home #main-nav {
 	#menu-item-814 {
 		display: none;
 	}
+}
+
+// Hide recaptcha badge
+.grecaptcha-badge {
+	visibility: hidden !important;  
+	opacity: 0 !important;  
 }

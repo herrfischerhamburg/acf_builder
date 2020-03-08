@@ -88,14 +88,14 @@ table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 :root{font-size:62.5%}
 :root body{margin:0;font-size:1.8rem;line-height:1.85;font-weight:400;font-family:"Lato",sans-serif;color:#111}
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{font-weight:700;font-family:"Meddon",sans-serif;margin-bottom:0;color:#111b3c;line-height:1.5;text-align:center}
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{font-weight:normal;font-family:"Pacifico",sans-serif;margin-bottom:0;color:#111b3c;line-height:1.5;text-align:center}
 :root .spaces_asusual h1,:root .spaces_asusual .h1,:root .spaces_asusual h2,:root .spaces_asusual .h2,:root .spaces_asusual h3,:root .spaces_asusual .h3,:root .spaces_asusual h4,:root .spaces_asusual .h4,:root .spaces_asusual h5,:root .spaces_asusual .h5,:root .spaces_asusual h6,:root .spaces_asusual .h6{margin-bottom:.5em}
 h1,.h1{font-size:3rem}
 h1.page_title,.h1.page_title{font-size:2.8rem}
 h1 span,.h1 span{font-weight:400}
 h2,.h2{font-size:2.8rem}
 h2 span,.h2 span{font-weight:400}
-h3,.h3{font-size:2.1rem}
+h3,.h3{font-size:2.2rem}
 h3 span,.h3 span{font-weight:400}
 h4,.h4{font-size:1.8rem}
 h5,.h5{font-size:1.8rem}
@@ -250,11 +250,13 @@ a.button.download::after,.button.download::after{content:none}
 .main_header{background-color:#111b3c}
 .main_header .menu_phone_mobile{color:#fff;position:relative;left:15px;top:.75em}
 .main_header .menu_phone_mobile a{color:#fff}
+.hello .gr_container1gr_row1gr_col1 img{margin-left:auto;margin-right:auto;max-width:330px}
 #contact h3{margin-top:2.5em}
-#main-nav #menu-item-1229,#main-nav #menu-item-1230,#main-nav #menu-item-1231{display:none}
-body.home #main-nav #menu-item-1229,body.home #main-nav #menu-item-1230,body.home #main-nav #menu-item-1231{display:inline-block}
+#main-nav .homeonly{display:none}
+body.home #main-nav .homeonly{display:inline-block}
 #main-nav #menu-item-1229 a{padding-left:0}
 body.home #main-nav #menu-item-814{display:none}
+.grecaptcha-badge{visibility:hidden !important;opacity:0 !important}
 .wpcf7-form{text-align:left;font-size:95%}
 .wpcf7-form input:not([type="checkbox"]),.wpcf7-form input:not([type="radio"]),.wpcf7-form label,.wpcf7-form textarea,.wpcf7-form select{width:100%;border:0;margin:0}
 .wpcf7-form input:not([type="checkbox"]),.wpcf7-form input:not([type="radio"]),.wpcf7-form textarea,.wpcf7-form select{font-size:95%}
@@ -301,11 +303,12 @@ div#ui-datepicker-div{z-index:1000 !important}
 .flex_slider .slider_content.height_sm_medium{height:250px}
 .flex_slider .slider_content.height_sm_big{height:450px}
 .flex_slider .slider_content.height_sm_verybig{height:600px}
+.hello .gr_container1gr_row1gr_col1 img{max-width:400px}
 }@media(min-width:768px){:root body{font-size:1.9rem}
-h1,.h1{font-size:5rem}
+h1,.h1{font-size:6rem}
 h1.page_title,.h1.page_title{font-size:4.8rem}
 h2,.h2{font-size:3.8rem}
-h3,.h3{font-size:2.4rem}
+h3,.h3{font-size:3rem}
 h4,.h4{font-size:2.2rem}
 #main-nav li.m_footer{clip:rect(1px,1px,1px,1px);position:fixed}
 .wrapper{padding-top:120px;padding-bottom:120px}

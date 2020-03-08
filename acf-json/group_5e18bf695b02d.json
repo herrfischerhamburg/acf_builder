@@ -250,6 +250,7 @@
                                         "class": "",
                                         "id": ""
                                     },
+                                    "acfe_permissions": "",
                                     "choices": {
                                         "square-xxs": "Quadratisch 70 (70 x 70)",
                                         "square": "Quadratisch 400 (400 x 400)",
@@ -257,7 +258,7 @@
                                         "img-s": "Klein (992 x 627)",
                                         "img-m": "Mittel (1200 x 758)",
                                         "img-xl": "Groß (1920 x 1200)",
-                                        "full": "Volle Größe"
+                                        "fullsize": "Volle Größe"
                                     },
                                     "allow_null": 0,
                                     "other_choice": 0,
@@ -265,6 +266,26 @@
                                     "layout": "vertical",
                                     "return_format": "value",
                                     "save_other_choice": 0
+                                },
+                                {
+                                    "key": "field_5e52fc5da03cd",
+                                    "label": "Max Width",
+                                    "name": "img_max_width",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "Px",
+                                    "maxlength": ""
                                 },
                                 {
                                     "key": "field_5e1aa85dbbcc2",
@@ -966,7 +987,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 0,
+    "active": false,
     "description": "",
     "acfe_display_title": "",
     "acfe_autosync": [
@@ -976,5 +997,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1582396508
+    "modified": 1582991934
 }

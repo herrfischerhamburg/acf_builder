@@ -99,6 +99,7 @@ add_image_size( 'img-xs', 400, 253, true );
 add_image_size( 'img-s', 992, 627, true );
 add_image_size( 'img-m', 1200, 758, true );
 add_image_size( 'img-xl', 1920, 1200, true );
+add_image_size( 'fullsize', 9999 );
 
 /**
  * Safari datepicker fallback
@@ -113,6 +114,13 @@ function new_excerpt_more($more) {
     return '<span class="ellipsis"> …<span>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+/**
+ * Encode E-Mails in ACF fields
+ */
+if ( function_exists( 'eae_encode_emails' ) )  {
+    add_filter( 'acf/load_value', 'eae_encode_emails' );
+}
 
 /**
  * Google Maps

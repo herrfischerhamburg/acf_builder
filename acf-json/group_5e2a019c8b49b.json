@@ -1,43 +1,11 @@
 {
-    "key": "group_5e2321b5c4878",
-    "title": "Modules - Row - Column - Options (Text + Colors)",
+    "key": "group_5e2a019c8b49b",
+    "title": "Modules - Row - Column - Element - Options (Link Elements)",
     "fields": [
         {
-            "key": "field_5e1a2fa92d679",
-            "label": "Textfarbe",
-            "name": "col_color",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "33",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "default_value": ""
-        },
-        {
-            "key": "field_5e1a2b5bcee42",
-            "label": "Hintergrundfarbe",
-            "name": "col_bgcolor",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "33",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "default_value": ""
-        },
-        {
-            "key": "field_5e1a0ccf2294a",
-            "label": "Text Ausrichtung",
-            "name": "col_text_align",
+            "key": "field_5e2a020cafad8",
+            "label": "Width",
+            "name": "mrceole_width",
             "type": "radio",
             "instructions": "",
             "required": 0,
@@ -49,9 +17,8 @@
             },
             "acfe_permissions": "",
             "choices": {
-                "left": "Links",
-                "center": "Zentriert",
-                "right": "Rechts"
+                "auto": "Auto",
+                "100%": "100%"
             },
             "allow_null": 0,
             "other_choice": 0,
@@ -59,6 +26,38 @@
             "layout": "horizontal",
             "return_format": "value",
             "save_other_choice": 0
+        },
+        {
+            "key": "field_5e2a05bf753b0",
+            "label": "Background Color",
+            "name": "mrceole_bgcolor",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "default_value": ""
+        },
+        {
+            "key": "field_5e2a05f5753b1",
+            "label": "Farbe",
+            "name": "mrceole_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "default_value": ""
         }
     ],
     "location": [
@@ -79,12 +78,10 @@
     "active": false,
     "description": "",
     "acfe_display_title": "",
-    "acfe_autosync": [
-        "json"
-    ],
+    "acfe_autosync": "",
     "acfe_permissions": "",
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1582991934
+    "modified": 1582991933
 }

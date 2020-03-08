@@ -1,0 +1,83 @@
+{
+    "key": "group_5e2a114aab7a1",
+    "title": "Modules - Diverse - Options - Background Image",
+    "fields": [
+        {
+            "key": "field_5e227bbf331f0",
+            "label": "Background Image",
+            "name": "mdo_bgimg",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "acfe_uploader": "wp",
+            "acfe_thumbnail": 0,
+            "return_format": "id",
+            "preview_size": "square-xxs",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e22828ee6625",
+            "label": "Image Opacity",
+            "name": "mdo_bgimg_opacity",
+            "type": "radio",
+            "instructions": "Own values = 0.1 - 1.0",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "67",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "0.3": "30%",
+                "0.5": "50%",
+                "1.0": "100%"
+            },
+            "allow_null": 0,
+            "other_choice": 1,
+            "save_other_choice": 0,
+            "default_value": "0.3 : 30%",
+            "layout": "horizontal",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": "",
+    "acfe_permissions": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1582991933
+}

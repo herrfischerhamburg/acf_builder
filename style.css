@@ -244,7 +244,7 @@ td, th { padding: 0; }
 
 @media (min-width: 768px) { :root body { font-size: 1.9rem; } }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-weight: 700; font-family: "Meddon", sans-serif; margin-bottom: 0; color: #111b3c; line-height: 1.5; text-align: center; }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-weight: normal; font-family: "Pacifico", sans-serif; margin-bottom: 0; color: #111b3c; line-height: 1.5; text-align: center; }
 
 :root .spaces_asusual h1, :root .spaces_asusual .h1, :root .spaces_asusual h2, :root .spaces_asusual .h2, :root .spaces_asusual h3, :root .spaces_asusual .h3, :root .spaces_asusual h4, :root .spaces_asusual .h4, :root .spaces_asusual h5, :root .spaces_asusual .h5, :root .spaces_asusual h6, :root .spaces_asusual .h6 { margin-bottom: .5em; }
 
@@ -252,7 +252,7 @@ h1, .h1 { font-size: 3rem; }
 
 h1.page_title, .h1.page_title { font-size: 2.8rem; }
 
-@media (min-width: 768px) { h1, .h1 { font-size: 5rem; }
+@media (min-width: 768px) { h1, .h1 { font-size: 6rem; }
   h1.page_title, .h1.page_title { font-size: 4.8rem; } }
 
 h1 span, .h1 span { font-weight: 400; }
@@ -263,9 +263,9 @@ h2, .h2 { font-size: 2.8rem; }
 
 h2 span, .h2 span { font-weight: 400; }
 
-h3, .h3 { font-size: 2.1rem; }
+h3, .h3 { font-size: 2.2rem; }
 
-@media (min-width: 768px) { h3, .h3 { font-size: 2.4rem; } }
+@media (min-width: 768px) { h3, .h3 { font-size: 3rem; } }
 
 h3 span, .h3 span { font-weight: 400; }
 
@@ -638,17 +638,23 @@ a.button.download::after, .button.download::after { content: none; }
 
 @media (min-width: 992px) { .hello { padding-top: 185px; } }
 
+.hello .gr_container1gr_row1gr_col1 img { margin-left: auto; margin-right: auto; max-width: 330px; }
+
+@media (min-width: 576px) { .hello .gr_container1gr_row1gr_col1 img { max-width: 400px; } }
+
 #contact h3 { margin-top: 2.5em; }
 
 @media (min-width: 992px) { .hello .mdo_bgimg { background-attachment: fixed; } }
 
-#main-nav #menu-item-1229, #main-nav #menu-item-1230, #main-nav #menu-item-1231 { display: none; }
+#main-nav .homeonly { display: none; }
 
-body.home #main-nav #menu-item-1229, body.home #main-nav #menu-item-1230, body.home #main-nav #menu-item-1231 { display: inline-block; }
+body.home #main-nav .homeonly { display: inline-block; }
 
 #main-nav #menu-item-1229 a { padding-left: 0; }
 
 body.home #main-nav #menu-item-814 { display: none; }
+
+.grecaptcha-badge { visibility: hidden !important; opacity: 0 !important; }
 
 /** Wrap checkboxes and radio buttons with lable ("use_label_element"): <p> Radio examples [radio radio-129 use_label_element default:1 "11" "22" "33"] </p> <p> Checkbox examples [checkbox checkbox-758 use_label_element "aa" "bb" "cc"] </p> */
 .wpcf7-form { text-align: left; font-size: 95%; }
